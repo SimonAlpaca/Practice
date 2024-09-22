@@ -1,0 +1,126 @@
+
+<html>
+
+
+<head>
+<title>第 14 話</title>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<script>if (self != top) top.location.href = window.location.href</script>
+<script type="text/javascript" src="/image/jquery1.6.4.js"></script>
+
+<SCRIPT language=javascript>
+    document.onkeydown = chang_page;
+    function chang_page() {
+        if (event.keyCode == 37 || event.keyCode == 33) location = '526400142026025.html'
+        if (event.keyCode == 39 || event.keyCode == 34) location = 'thend.asp?id=526400142026026'
+    }
+</SCRIPT>
+
+<style type="text/css">
+<!--
+body {font-family: Tahoma, Verdana;font-size:10pt; color: #555555}
+table {font-family: Tahoma, Verdana;font-size:10pt; color: #555555}
+a:link {text-decoration: none;color:#555555}
+a:visited{text-decoration: none; color:#555555}
+a:active{ text-decoration: none; color:#555555}
+a:hover {COLOR: #ff0000; POSITION: relative; TEXT-DECORATION: none}
+.pages {BORDER-BOTTOM: #A2A2A2 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #A2A2A2 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 15px; PADDING-LEFT: 4px; PADDING-RIGHT: 3px; FONT-FAMILY: Arial; BACKGROUND-COLOR: #F3F3F3; HEIGHT: 0pt; MARGIN-LEFT: 4px; FONT-SIZE: 8pt; BORDER-TOP: #A2A2A2 1px solid; BORDER-RIGHT: #A2A2A2 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px}
+.pages:hover {BORDER-BOTTOM: #7B7B7B 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #7B7B7B 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 15px; PADDING-LEFT: 4px; PADDING-RIGHT: 3px; FONT-FAMILY: Arial; BACKGROUND-COLOR: #F3F3F3; HEIGHT: 0pt; COLOR: #E80000; MARGIN-LEFT: 4px; FONT-SIZE: 8pt; BORDER-TOP: #7B7B7B 1px solid; BORDER-RIGHT: #7B7B7B 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px}
+.onpage {BORDER-BOTTOM: #7B7B7B 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #7B7B7B 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 15px; BACKGROUND-COLOR: #8C8CC6; PADDING-LEFT: 4px; PADDING-RIGHT: 3px; FONT-FAMILY: Arial; HEIGHT: 0pt; COLOR: #ffffff; MARGIN-LEFT: 3px; FONT-SIZE: 10pt; BORDER-TOP: #7B7B7B 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #7B7B7B 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px}
+//-->
+</style>
+</head>
+<body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0>
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="100%">
+        <tr> 
+          <td bgcolor="#EAEAEA"> 
+      <table align="center" height="42">
+        <tr>
+                <td width="150">
+				
+				<a class=pages href=52640013.html>&nbsp;<img src=/image/rad1.gif width=6 height=10 border=0> 上一話 ( 第 13 話 )&nbsp;</a>
+				
+		        </td>
+                <td width="600"><center><li><a href=/post/526400142026026.html style="font-size:14pt;font-weight: bold;">14 話</a>　　
+            <select name="jump" onChange="location.href=this.options[this.selectedIndex].value;" style="font-size:12px;">
+			  <option selected>第 26 頁</option><option value="526400142026001.html">第 1 頁</option><option value="526400142026002.html">第 2 頁</option><option value="526400142026003.html">第 3 頁</option><option value="526400142026004.html">第 4 頁</option><option value="526400142026005.html">第 5 頁</option><option value="526400142026006.html">第 6 頁</option><option value="526400142026007.html">第 7 頁</option><option value="526400142026008.html">第 8 頁</option><option value="526400142026009.html">第 9 頁</option><option value="526400142026010.html">第 10 頁</option><option value="526400142026011.html">第 11 頁</option><option value="526400142026012.html">第 12 頁</option><option value="526400142026013.html">第 13 頁</option><option value="526400142026014.html">第 14 頁</option><option value="526400142026015.html">第 15 頁</option><option value="526400142026016.html">第 16 頁</option><option value="526400142026017.html">第 17 頁</option><option value="526400142026018.html">第 18 頁</option><option value="526400142026019.html">第 19 頁</option><option value="526400142026020.html">第 20 頁</option><option value="526400142026021.html">第 21 頁</option><option value="526400142026022.html">第 22 頁</option><option value="526400142026023.html">第 23 頁</option><option value="526400142026024.html">第 24 頁</option><option value="526400142026025.html">第 25 頁</option><option value="526400142026026.html">第 26 頁</option></select></center></td>
+                <td width="150">
+				
+				<a class=pages href=52640015.html>&nbsp;<img src=/image/rad.gif width=6 height=10 border=0> 下一話 ( 第 15 話 )&nbsp;</a>
+				
+				</td>
+        </tr>
+      </table>
+          </td>
+        </tr>
+    <tr><td bgcolor="#bbbbbb" height="1"></td></tr>
+	<tr> 
+          <td align="center">
+      <table>
+        <tr>
+		  <td align="center">
+		    
+		     <a href="thend.asp?id=526400142026026"><img src="//cc.fun8.us//2e5fc/5264/014/026.jpg" border="0" oncontextmenu='return false' onload="if(this.width>screen.width-176) {this.resized=true; this.width=screen.width*0.98-180;}"></a>
+                    
+ </td><td width="12">&nbsp;</td><td valign="top" width="160"><div id="sidebar-follow"><table cellpadding="0" cellspacing="0" border="0"><tr><td align="center"><a href=526400142026025.html><img src=/image/pagep.png width=52 height=30 border=0></a>　　<a href=thend.asp?id=526400142026026><img src=/image/panen.png width=50 height=30 border=0></a></td></tr><tr><td>
+
+    
+
+<script async src=https://securepubads.g.doubleclick.net/tag/js/gpt.js></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/128002626/GPT_591/GPT_15200', [160, 600], 'div-gpt-ad-1708588526089-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- /128002626/GPT_591/GPT_15200 -->
+<div id='div-gpt-ad-1708588526089-0' style='min-width: 160px; min-height: 600px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1708588526089-0'); });
+  </script>
+</div>
+
+    
+
+		      </td></tr></table></div>
+              </td></tr><tr><td align="center" width="960">
+    
+<br><fieldset id=info align=center style='margin:5; font-size:14pt;'><legend>&nbsp;<a href=https://www.i-gamer.net target=_blank>好玩遊戲區</a> ( 免下載安裝，點開直接玩！)　	<a href=https://www.i-gamer.net/mobile/?ch=hot target=_blank>熱門</a>｜<a href=https://www.i-gamer.net/mobile/?ch=new target=_blank>最新</a>｜<a href=https://www.i-gamer.net/mobile/?ch=type target=_blank>分類</a>｜<a href=https://www.i-gamer.net/mobile/ target=_blank>更多</a>&nbsp;</legend><table width=988 bgcolor=#FFFFFF cellspacing=5 style='font-size:13pt;' align=center><tr><td colspan=9 height=5></td></tr><tr align=center><td><a href=https://www.i-gamer.net/mobile/site/4807.html target=_blank><img src=https://web.i-gamer.net/appic/img/4807.jpg width=100 height=100 border=0></a><br>滑冰女王</td><td><a href=https://www.i-gamer.net/mobile/site/4806.html target=_blank><img src=https://web.i-gamer.net/appic/img/4806.jpg width=100 height=100 border=0></a><br>伐木工向前衝</td><td><a href=https://www.i-gamer.net/mobile/site/4802.html target=_blank><img src=https://web.i-gamer.net/appic/img/4802.jpg width=100 height=100 border=0></a><br>轉職暴富</td><td><a href=https://www.i-gamer.net/mobile/site/3808.html target=_blank><img src=https://web.i-gamer.net/appic/img/3808.jpg width=100 height=100 border=0></a><br>管道工英雄</td><td><a href=https://www.i-gamer.net/mobile/site/3802.html target=_blank><img src=https://web.i-gamer.net/appic/img/3802.jpg width=100 height=100 border=0></a><br>椪糖動手做</td><td><a href=https://www.i-gamer.net/mobile/site/3800.html target=_blank><img src=https://web.i-gamer.net/appic/img/3800.jpg width=100 height=100 border=0></a><br>切片大師</td><td><a href=https://www.i-gamer.net/mobile/site/3792.html target=_blank><img src=https://web.i-gamer.net/appic/img/3792.jpg width=100 height=100 border=0></a><br>王牌對決</td><td><a href=https://www.i-gamer.net/mobile/site/3786.html target=_blank><img src=https://web.i-gamer.net/appic/img/3786.jpg width=100 height=100 border=0></a><br>彩球分色２</td></tr></table></fieldset><br>
+
+    
+	      </td></tr></table>
+		  </td>
+        </tr>
+          <td height="36" align="center"> 
+			<a class=pages href=526400142026025.html><img src=/image/rad1.gif width=6 height=10 border=0> 上一頁</a>
+            　<a class=pages href=526400142026001.html>1</a> ...  <a class=pages href=526400142026017.html>17</a> <a class=pages href=526400142026018.html>18</a> <a class=pages href=526400142026019.html>19</a> <a class=pages href=526400142026020.html>20</a> <a class=pages href=526400142026021.html>21</a> <a class=pages href=526400142026022.html>22</a> <a class=pages href=526400142026023.html>23</a> <a class=pages href=526400142026024.html>24</a> <a class=pages href=526400142026025.html>25</a> <a class=onpage>26</a>　
+<a class=pages href=thend.asp?id=526400142026026><img src=/image/rad.gif width=6 height=10 border=0> 下一頁</a>　　　　　　
+			</td>
+        </tr>
+  <tr> 
+    <td>
+  <table width="99%" border="0">
+
+	  <td width="160"> </td>
+    </tr>
+  </table>
+<script>
+SidebarFollow=function(){this.config={element:null,distanceToTop:0};this.cache={originalToTop:0,prevElement:null,parentToTop:0,placeholder:jQuery('<div>')}};SidebarFollow.prototype={init:function(config){this.config=config||this.config;var _self=this;var element=jQuery(_self.config.element);if(element.length<=0){return;}
+var prevElement=element.prev();while(prevElement.is(':hidden')){prevElement=prevElement.prev();if(prevElement.length<=0){break;}}
+_self.cache.prevElement=prevElement;var parent=element.parent();var parentToTop=parent.offset().top;var parentBorderTop=parent.css('border-top');var parentPaddingTop=parent.css('padding-top');_self.cache.parentToTop=parentToTop+ parentBorderTop+ parentPaddingTop;jQuery(window).scroll(function(){_self._scrollScreen({element:element,_self:_self});});jQuery(window).resize(function(){_self._scrollScreen({element:element,_self:_self});});},_scrollScreen:function(args){var _self=args._self;var element=args.element;var prevElement=_self.cache.prevElement;var toTop=_self.config.distanceToTop;var bodyToTop=parseInt(jQuery('body').css('top'),10);if(!isNaN(bodyToTop)){toTop+=bodyToTop;}
+var elementToTop=element.offset().top- toTop;var referenceToTop=0;if(prevElement&&prevElement.length===1){referenceToTop=prevElement.offset().top+ prevElement.outerHeight();}else{referenceToTop=_self.cache.parentToTop- toTop;}
+if(jQuery(document).scrollTop()>elementToTop){var elementHeight=element.outerHeight();_self.cache.placeholder.css('height',elementHeight).insertBefore(element);_self.cache.originalToTop=elementToTop;element.css({top:toTop+'px',position:'fixed'});}else if(_self.cache.originalToTop>elementToTop||referenceToTop>elementToTop){_self.cache.placeholder.remove();element.css({position:'static'});}}};
+/* <![CDATA[ */
+(new SidebarFollow()).init({
+	element: jQuery('#sidebar-follow'),
+	distanceToTop: -6
+});
+/* ]]> */
+</script>
+    </td>
+  </tr>
+      </table>
+
+</html>

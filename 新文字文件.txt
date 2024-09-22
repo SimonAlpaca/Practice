@@ -1,0 +1,75 @@
+    def ShowIMG(self, pic_path, is_cached = False):                         # window mode
+        print("ShowIMG")    
+        logging.info("ShowIMG")
+        
+        timer_start = time.perf_counter()
+        
+        self.stor.pause_backend = True
+        
+        self.is_stop_ani = True
+
+        self.error_label.config(text = "")
+        self.parent.update()                                 # update pic_w, pic_h for fullscreen resize 
+        self.pic_canvas.delete("all")                        
+      
+        if len(pic_path) > 255:
+            exception_pathtoolong()
+        
+        try:
+            pic_w, pic_h = self.pic_canvas.winfo_width(), self.pic_canvas.winfo_height()  # get canvas width and height
+        
+        except:
+            pass  
+        
+        if is_cached == False:
+            
+            img = cv2.imdecode(np.fromfile(pic_path, dtype=np.uint8), cv2.IMREAD_UNCHANGED)
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    
+            if img is None:
+                exception_filenotfound()
+            
+            img_h, img_w = img.shape[:2]
+            
+            if window.full_w > 1 and window.full_h > 1:
+        
+                if settinglevel.is_original:
+                    resize_scale = 1
+        
+                else:
+                    resize_scale = min(window.full_w> / img_w, window.full_h / img_h)   # calculate the resize ratio, maintaining height-width scale
+                    #resize_scale = min(resize_scale, 1)            # avoid bigger than original
+        
+                w, h = int(img_w * resize_scale * window.zoom_factor), int(img_h * resize_scale * window.zoom_factor)
+                w_h = (w, h)
+                
+                try:
+                    resize_img = cv2.resize(img, w_h, interpolation = cv2.INTER_AREA)
+                
+                except OSError:                              # fix OSError: image file is truncated
+                    print("OSError: image file is truncated")
+                    logging.info("OSError: image file is truncated")               
+                    ImageFile.LOAD_TRUNCATED_IMAGES = True
+                    resize_img = cv2.resize(img, w_h, interpolation = cv2.INTER_AREA)
+                
+   
+                fulllevel.stor.write_storage(window.fileindex, resize_img)
+                
+                del img
+                
+        else:
+            resize_img = fulllevel.stor.ListStor[window.fileindex]
+        
+
+        time_diff = time.perf_counter() - timer_start
+        print("time diff: ", time_diff)
+        
+        fulllevel.full_canvas.image = ImageTk.PhotoImage(image = Image.fromarray(resize_img))
+        fulllevel.full_canvas.create_image(window.full_w / 2, window.full_h / 2, anchor="center", image = fulllevel.full_canvas.image)
+        
+        self.parent.update()
+        self.parent.focus_set()
+        
+        self.stor.pause_backend = False
+        
+        del resize_img
