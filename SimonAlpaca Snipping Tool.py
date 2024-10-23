@@ -41,6 +41,7 @@ class WindowGUI(tk.Frame):
         self.temp_vid = None
         self.top = None
         self.mouse_pointer = []
+        self.i = 0
         
         # get width and height of all screens
         list_monitors = screeninfo.get_monitors()     # generate list of each monitor
@@ -275,11 +276,6 @@ class WindowGUI(tk.Frame):
         self.area_canvas.pack()
         
         self.select_area.attributes("-alpha", 0.1)
-
-        self.select_area.bind("<Button-3>", self.area_cancel)
-        self.select_area.bind('<Button-1>', self.area_predrag)
-        self.select_area.bind('<B1-Motion>', self.area_drag)
-        self.select_area.bind('<ButtonRelease-1>', self.button_release)
         
         self.select_area.withdraw()
     
@@ -368,8 +364,12 @@ class WindowGUI(tk.Frame):
         self.select_con.update()
         
         self.motion1 = self.select_area.bind('<Motion>', self.area_motion)
+        self.select_area.bind("<Button-3>", self.area_cancel)
+        self.select_area.bind('<ButtonRelease-1>', self.button_release)
         
-        self.i = 0
+        if not self.is_predefine:
+            self.predrag1 = self.select_area.bind('<Button-1>', self.area_predrag)
+            self.drag1 = self.select_area.bind('<B1-Motion>', self.area_drag)
     
     def area_cancel(self, event=None):
         print("area_cancel")
@@ -395,6 +395,10 @@ class WindowGUI(tk.Frame):
         
         self.i = 0
         
+        if not self.is_predefine:
+            self.select_area.unbind('<Button-1>', self.predrag1)
+            self.select_area.unbind('<B1-Motion>', self.drag1)
+            
         self.select_area.update()
         self.select_area.withdraw()
         self.select_area.attributes('-topmost', False)
@@ -403,14 +407,14 @@ class WindowGUI(tk.Frame):
         self.select_con.attributes('-topmost', False)
     
     def area_motion(self, event):
-        left = event.x
-        top = event.y
+        self.left = event.x
+        self.top = event.y
        
         self.select_text01.delete("1.0","2.0")
-        self.select_text01.insert("1.0", left) 
+        self.select_text01.insert("1.0", self.left) 
 
         self.select_text02.delete("1.0","2.0")
-        self.select_text02.insert("1.0", top) 
+        self.select_text02.insert("1.0", self.top) 
               
         self.select_text03.delete("1.0","2.0")
         self.select_text04.delete("1.0","2.0")
@@ -420,8 +424,8 @@ class WindowGUI(tk.Frame):
             pre_i = self.i
             self.i = self.i + 1
             
-            width = int(self.predefine_w) + left
-            height = int(self.predefine_h) + top
+            self.width = int(self.predefine_w) + self.left
+            self.height = int(self.predefine_h) + self.top
 
             self.select_text03.delete("1.0","2.0")
             self.select_text03.insert("1.0", self.predefine_w) 
@@ -429,7 +433,7 @@ class WindowGUI(tk.Frame):
             self.select_text04.delete("1.0","2.0")
             self.select_text04.insert("1.0", self.predefine_h) 
             
-            globals()["rect_%s" %self.i] = self.area_canvas.create_rectangle(left, top, width, height, fill='white')
+            globals()["rect_%s" %self.i] = self.area_canvas.create_rectangle(self.left, self.top, self.width, self.height, fill='white')
             
             if pre_i != 0 :
                 self.area_canvas.delete(globals()["rect_%s" %pre_i])
