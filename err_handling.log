@@ -1,23 +1,1829 @@
-INFO:root:window.__init__
+INFO:root:class WindowGUI _init_
+INFO:root:class Storage _init_: window 
+INFO:root:class SettingGUI _init_
 INFO:root:import_settings
-INFO:root:setting_create
+INFO:root:class ListboxGUI _init_
+INFO:root:class FullscreenGUI _init_
+INFO:root:class Storage _init_: fulllevel 
+INFO:root:create_listbox
 INFO:root:window_create
-INFO:root:select_area_create
-INFO:root:select_controller_create
-INFO:root:video_create
 INFO:root:set_appwindow
+INFO:root:gif_con_create
+INFO:root:hide_listbox
+INFO:root:fullscreen_create
+INFO:root:event_focusin
 INFO:root:show_appwindow
-INFO:root:image_button_click
-INFO:root:clear_temp_files
-INFO:root:area_enter
-INFO:root:window_hide
-INFO:root:button_release
-INFO:root:area_quit
-INFO:root:cap_image
-INFO:root:window_changesize
+INFO:root:event_focusin
+INFO:root:event_focusin
+INFO:root:go
+INFO:root:generate_list
+INFO:root:Nat Sort Successful
+INFO:root:append_filelist
+INFO:root:Import 103 items
+INFO:root:dataframe_create
+INFO:root:clear_all_cache
+INFO:root:dataframe_create_filter: start
+INFO:root:dataframe_create_random: start
+INFO:root:dataframe_create_random: done
+INFO:root:Cache Cleared All: window
+INFO:root:garbage collected: 0
+INFO:root:Cache Cleared All: fulllevel
+INFO:root:garbage collected: 0
+INFO:root:dataframe_create_filter: done
+INFO:root:start backend_storage: window
 INFO:root:ShowIMG
-INFO:root:window_unhide
-INFO:root:save_button_click
-INFO:root:save_img
-INFO:root:setting_buttonclick
-INFO:root:drag_setting
+INFO:root:storage size : 0
+INFO:root:Cached: window - 0
+INFO:root:Cached: window - 0
+INFO:root:storage size : 0.25
+INFO:root:Cached: window - 1
+INFO:root:storage size : 0.5
+INFO:root:Cached: window - 2
+INFO:root:storage size : 0.75
+INFO:root:event_focusin
+INFO:root:Cached: window - 3
+INFO:root:storage size : 1.0
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:Cached: window - 4
+INFO:root:thread stopped
+INFO:root:start backend_storage: fulllevel
+INFO:root:ShowIMG_Full
+INFO:root:storage size : 1.37
+INFO:root:Cached: fulllevel - 0
+INFO:root:storage size : 1.37
+INFO:root:Cached: fulllevel - 0
+INFO:root:storage size : 1.75
+INFO:root:Cached: window - 5
+INFO:root:storage size : 2.12
+INFO:root:Cached: fulllevel - 1
+INFO:root:storage size : 2.5
+INFO:root:Cached: window - 6
+INFO:root:storage size : 2.87
+INFO:root:Cached: fulllevel - 2
+INFO:root:storage size : 3.25
+INFO:root:Cached: window - 7
+INFO:root:storage size : 3.62
+INFO:root:Cached: fulllevel - 3
+INFO:root:storage size : 4.0
+INFO:root:Cached: window - 8
+INFO:root:storage size : 4.37
+INFO:root:Cached: fulllevel - 4
+INFO:root:storage size : 4.75
+INFO:root:Cached: window - 9
+INFO:root:storage size : 5.12
+INFO:root:Cached: fulllevel - 5
+INFO:root:storage size : 5.5
+INFO:root:Cached: window - 10
+INFO:root:storage size : 5.87
+INFO:root:Cached: fulllevel - 6
+INFO:root:storage size : 6.25
+INFO:root:Cached: window - 11
+INFO:root:storage size : 6.62
+INFO:root:Cached: fulllevel - 7
+INFO:root:storage size : 7.0
+INFO:root:Cached: window - 12
+INFO:root:storage size : 7.37
+INFO:root:Cached: fulllevel - 8
+INFO:root:storage size : 7.75
+INFO:root:Cached: fulllevel - 9
+INFO:root:storage size : 8.5
+INFO:root:Cached: window - 13
+INFO:root:storage size : 8.5
+INFO:root:Cached: fulllevel - 10
+INFO:root:storage size : 8.87
+INFO:root:Cached: window - 14
+INFO:root:storage size : 9.71
+INFO:root:Cached: fulllevel - 11
+INFO:root:storage size : 10.09
+INFO:root:Cached: window - 15
+INFO:root:storage size : 10.93
+INFO:root:Cached: fulllevel - 12
+INFO:root:storage size : 11.31
+INFO:root:Cached: window - 16
+INFO:root:storage size : 11.68
+INFO:root:Cached: fulllevel - 13
+INFO:root:storage size : 12.06
+INFO:root:start_photoalbum
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:class Storage _init_: photoalbum 
+INFO:root:event_focusin
+INFO:root:start backend_storage: photoalbum
+INFO:root:Cached: window - 17
+INFO:root:start_slide
+INFO:root:start backend_preview_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:Cached: photoalbum - 0
+INFO:root:storage size : 15.91
+INFO:root:Cached: photoalbum - 0
+INFO:root:Preview Cached: photoalbum - 1
+INFO:root:ShowIMG_Preview
+INFO:root:Preview Cached: photoalbum - 2
+INFO:root:storage size : 15.91
+INFO:root:storage size : 15.91
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Preview Cached: photoalbum - 3
+INFO:root:Cached: window - 18
+INFO:root:Cached: photoalbum - 1
+INFO:root:storage size : 19.76
+INFO:root:Cached: photoalbum - 0
+INFO:root:storage size : 19.76
+INFO:root:storage size : 19.76
+INFO:root:Preview Cached: photoalbum - 4
+INFO:root:Cached: photoalbum - 2
+INFO:root:storage size : 22.43
+INFO:root:Cached: window - 19
+INFO:root:storage size : 25.1
+INFO:root:pause_auto
+INFO:root:Preview Cached: photoalbum - 5
+INFO:root:Cached: photoalbum - 3
+INFO:root:storage size : 27.76
+INFO:root:Cached: window - 20
+INFO:root:storage size : 30.43
+INFO:root:Preview Cached: photoalbum - 6
+INFO:root:Cached: photoalbum - 4
+INFO:root:storage size : 33.1
+INFO:root:Cached: window - 21
+INFO:root:storage size : 34.28
+INFO:root:Preview Cached: photoalbum - 7
+INFO:root:Cached: photoalbum - 5
+INFO:root:storage size : 36.95
+INFO:root:Cached: window - 22
+INFO:root:storage size : 38.13
+INFO:root:Preview Cached: photoalbum - 8
+INFO:root:Cached: photoalbum - 6
+INFO:root:storage size : 40.8
+INFO:root:Cached: window - 23
+INFO:root:storage size : 41.98
+INFO:root:Cached: photoalbum - 7
+INFO:root:Preview Cached: photoalbum - 9
+INFO:root:storage size : 44.65
+INFO:root:Cached: window - 24
+INFO:root:storage size : 47.32
+INFO:root:Cached: photoalbum - 8
+INFO:root:Preview Cached: photoalbum - 10
+INFO:root:storage size : 49.98
+INFO:root:Cached: window - 25
+INFO:root:storage size : 52.65
+INFO:root:Cached: photoalbum - 9
+INFO:root:Preview Cached: photoalbum - 11
+INFO:root:storage size : 55.32
+INFO:root:Cached: window - 26
+INFO:root:storage size : 56.5
+INFO:root:Preview Cached: photoalbum - 12
+INFO:root:Cached: photoalbum - 10
+INFO:root:storage size : 59.17
+INFO:root:Cached: window - 27
+INFO:root:storage size : 61.84
+INFO:root:Cached: photoalbum - 11
+INFO:root:Preview Cached: photoalbum - 13
+INFO:root:storage size : 65.69
+INFO:root:Cached: window - 28
+INFO:root:storage size : 65.69
+INFO:root:Preview Cached: photoalbum - 14
+INFO:root:Cached: photoalbum - 12
+INFO:root:Cached: window - 29
+INFO:root:storage size : 71.02
+INFO:root:storage size : 71.02
+INFO:root:Cached: window - 30
+INFO:root:Cached: photoalbum - 13
+INFO:root:Preview Cached: photoalbum - 15
+INFO:root:storage size : 76.35
+INFO:root:storage size : 76.35
+INFO:root:Cached: photoalbum - 14
+INFO:root:Cached: window - 31
+INFO:root:storage size : 80.21
+INFO:root:storage size : 80.21
+INFO:root:Preview Cached: photoalbum - 16
+INFO:root:Cached: photoalbum - 15
+INFO:root:storage size : 84.06
+INFO:root:Cached: window - 32
+INFO:root:storage size : 84.06
+INFO:root:Preview Cached: photoalbum - 17
+INFO:root:Cached: photoalbum - 16
+INFO:root:storage size : 86.73
+INFO:root:Cached: window - 33
+INFO:root:storage size : 87.91
+INFO:root:Preview Cached: photoalbum - 18
+INFO:root:drag_photo_preview
+INFO:root:Cached: photoalbum - 17
+INFO:root:storage size : 89.1
+INFO:root:Cached: window - 34
+INFO:root:storage size : 90.28
+INFO:root:Preview Cached: photoalbum - 19
+INFO:root:Cached: photoalbum - 18
+INFO:root:storage size : 91.47
+INFO:root:Cached: window - 35
+INFO:root:storage size : 94.13
+INFO:root:Cached: photoalbum - 19
+INFO:root:storage size : 96.8
+INFO:root:Preview Cached: photoalbum - 20
+INFO:root:Cached: window - 36
+INFO:root:storage size : 99.47
+INFO:root:Cached: photoalbum - 20
+INFO:root:storage size : 102.13
+INFO:root:Preview Cached: photoalbum - 21
+INFO:root:Cached: window - 37
+INFO:root:storage size : 103.32
+INFO:root:Cached: photoalbum - 21
+INFO:root:storage size : 104.5
+INFO:root:Cached: window - 38
+INFO:root:Preview Cached: photoalbum - 22
+INFO:root:storage size : 107.17
+INFO:root:Cached: photoalbum - 22
+INFO:root:storage size : 108.35
+INFO:root:Preview Cached: photoalbum - 23
+INFO:root:Cached: window - 39
+INFO:root:Cached: photoalbum - 23
+INFO:root:storage size : 110.73
+INFO:root:storage size : 110.73
+INFO:root:Preview Cached: photoalbum - 24
+INFO:root:Cached: window - 40
+INFO:root:Cached: photoalbum - 24
+INFO:root:storage size : 116.06
+INFO:root:storage size : 116.06
+INFO:root:Auto storage done: window
+INFO:root:Cached: photoalbum - 25
+INFO:root:Preview Cached: photoalbum - 25
+INFO:root:storage size : 118.73
+INFO:root:Preview Cached: photoalbum - 26
+INFO:root:Cached: photoalbum - 26
+INFO:root:storage size : 119.91
+INFO:root:Cached: photoalbum - 27
+INFO:root:Preview Cached: photoalbum - 27
+INFO:root:storage size : 122.58
+INFO:root:Preview Cached: photoalbum - 28
+INFO:root:Cached: photoalbum - 28
+INFO:root:storage size : 123.76
+INFO:root:Preview Cached: photoalbum - 29
+INFO:root:Cached: photoalbum - 29
+INFO:root:storage size : 126.43
+INFO:root:Preview Cached: photoalbum - 30
+INFO:root:Cached: photoalbum - 30
+INFO:root:storage size : 129.1
+INFO:root:Preview Cached: photoalbum - 31
+INFO:root:Cached: photoalbum - 31
+INFO:root:storage size : 131.76
+INFO:root:photo_preview_resize
+INFO:root:photo_preview_resize
+INFO:root:Preview Cached: photoalbum - 32
+INFO:root:photo_preview_resize
+INFO:root:Cached: photoalbum - 32
+INFO:root:storage size : 134.43
+INFO:root:photo_preview_resize
+INFO:root:Preview Cached: photoalbum - 33
+INFO:root:Cached: photoalbum - 33
+INFO:root:storage size : 135.61
+INFO:root:Preview Cached: photoalbum - 34
+INFO:root:Cached: photoalbum - 34
+INFO:root:storage size : 136.8
+INFO:root:Preview Cached: photoalbum - 35
+INFO:root:photo_preview_event_resize
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 35
+INFO:root:Preview Cached: photoalbum - 36
+INFO:root:storage size : 139.47
+INFO:root:start backend_preview_storage: photoalbum
+INFO:root:Preview Cached: photoalbum - 37
+INFO:root:Cached: photoalbum - 36
+INFO:root:Preview Cached: photoalbum - 1
+INFO:root:Preview Cached: photoalbum - 38
+INFO:root:storage size : 142.13
+INFO:root:Preview Cached: photoalbum - 39
+INFO:root:Cached: photoalbum - 37
+INFO:root:storage size : 143.32
+INFO:root:Preview Cached: photoalbum - 2
+INFO:root:Preview Cached: photoalbum - 40
+INFO:root:Cached: photoalbum - 38
+INFO:root:Preview Cached: photoalbum - 3
+INFO:root:storage size : 145.98
+INFO:root:Preview Cached: photoalbum - 41
+INFO:root:Auto Preview storage done: photoalbum
+INFO:root:drag_photo_preview
+INFO:root:Cached: photoalbum - 39
+INFO:root:Preview Cached: photoalbum - 4
+INFO:root:storage size : 147.17
+INFO:root:Preview Cached: photoalbum - 5
+INFO:root:Cached: photoalbum - 40
+INFO:root:storage size : 149.84
+INFO:root:Auto storage done: photoalbum
+INFO:root:Preview Cached: photoalbum - 6
+INFO:root:Preview Cached: photoalbum - 7
+INFO:root:Preview Cached: photoalbum - 8
+INFO:root:Preview Cached: photoalbum - 9
+INFO:root:Preview Cached: photoalbum - 10
+INFO:root:Preview Cached: photoalbum - 11
+INFO:root:Preview Cached: photoalbum - 12
+INFO:root:photo_preview_resize
+INFO:root:photo_preview_resize
+INFO:root:Preview Cached: photoalbum - 13
+INFO:root:photo_preview_resize
+INFO:root:photo_preview_resize
+INFO:root:photo_preview_resize
+INFO:root:Preview Cached: photoalbum - 14
+INFO:root:photo_preview_resize
+INFO:root:photo_preview_resize
+INFO:root:photo_preview_resize
+INFO:root:Preview Cached: photoalbum - 15
+INFO:root:Preview Cached: photoalbum - 16
+INFO:root:Preview Cached: photoalbum - 17
+INFO:root:photo_preview_event_resize
+INFO:root:ShowIMG_Preview
+INFO:root:Preview Cached: photoalbum - 18
+INFO:root:start backend_preview_storage: photoalbum
+INFO:root:Preview Cached: photoalbum - 19
+INFO:root:Preview Cached: photoalbum - 1
+INFO:root:Preview Cached: photoalbum - 20
+INFO:root:Preview Cached: photoalbum - 2
+INFO:root:Preview Cached: photoalbum - 21
+INFO:root:Preview Cached: photoalbum - 3
+INFO:root:Preview Cached: photoalbum - 22
+INFO:root:event_focusin
+INFO:root:Preview Cached: photoalbum - 4
+INFO:root:Preview Cached: photoalbum - 23
+INFO:root:Preview Cached: photoalbum - 5
+INFO:root:Preview Cached: photoalbum - 24
+INFO:root:pause_auto
+INFO:root:Preview Cached: photoalbum - 6
+INFO:root:Preview Cached: photoalbum - 25
+INFO:root:Preview Cached: photoalbum - 7
+INFO:root:pause_auto
+INFO:root:Preview Cached: photoalbum - 26
+INFO:root:Preview Cached: photoalbum - 8
+INFO:root:Preview Cached: photoalbum - 27
+INFO:root:Preview Cached: photoalbum - 9
+INFO:root:Preview Cached: photoalbum - 28
+INFO:root:pause_auto
+INFO:root:Preview Cached: photoalbum - 10
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 29
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 11
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 30
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 12
+INFO:root:Preview Cached: photoalbum - 31
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 13
+INFO:root:Preview Cached: photoalbum - 32
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 14
+INFO:root:Preview Cached: photoalbum - 33
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 15
+INFO:root:Preview Cached: photoalbum - 34
+INFO:root:Preview Cached: photoalbum - 16
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 35
+INFO:root:Preview Cached: photoalbum - 17
+INFO:root:fullforward
+INFO:root:forward - 1
+INFO:root:Preview Cached: photoalbum - 36
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Preview Cached: photoalbum - 18
+INFO:root:Preview Cached: photoalbum - 37
+INFO:root:Preview Cached: photoalbum - 37
+INFO:root:Preview Cached: photoalbum - 38
+INFO:root:Preview Cached: photoalbum - 38
+INFO:root:Preview Cached: photoalbum - 39
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 39
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 40
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 40
+INFO:root:Preview Cached: photoalbum - 41
+INFO:root:Auto Preview storage done: photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 41
+INFO:root:Auto Preview storage done: photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 2
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 3
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 4
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:wheel_photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 5
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 6
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 7
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:show_listbox
+INFO:root:filter_con_create
+INFO:root:fullforward
+INFO:root:forward - 8
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_Preview
+INFO:root:select_listbox
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:start backend_preview_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 41
+INFO:root:storage size : 152.5
+INFO:root:Cached: photoalbum - 16
+INFO:root:Preview Cached: photoalbum - 42
+INFO:root:storage size : 152.5
+INFO:root:Cached: photoalbum - 42
+INFO:root:storage size : 155.17
+INFO:root:Preview Cached: photoalbum - 43
+INFO:root:Cached: photoalbum - 43
+INFO:root:storage size : 156.35
+INFO:root:Preview Cached: photoalbum - 44
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 44
+INFO:root:Preview Cached: photoalbum - 45
+INFO:root:storage size : 157.54
+INFO:root:Preview Cached: photoalbum - 46
+INFO:root:Cached: photoalbum - 45
+INFO:root:storage size : 158.73
+INFO:root:Preview Cached: photoalbum - 47
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 46
+INFO:root:Preview Cached: photoalbum - 48
+INFO:root:storage size : 161.39
+INFO:root:Preview Cached: photoalbum - 49
+INFO:root:Cached: photoalbum - 47
+INFO:root:storage size : 164.06
+INFO:root:select_listbox
+INFO:root:Preview Cached: photoalbum - 50
+INFO:root:Auto Preview storage stopped: photoalbum
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:storage size : 164.06
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:thread stopped
+INFO:root:start photoalbum thread
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:start backend_preview_storage: photoalbum
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Preview Cached: photoalbum - 51
+INFO:root:Cached: photoalbum - 48
+INFO:root:storage size : 166.73
+INFO:root:Cached: photoalbum - 26
+INFO:root:storage size : 166.73
+INFO:root:Preview Cached: photoalbum - 52
+INFO:root:Cached: photoalbum - 49
+INFO:root:storage size : 169.39
+INFO:root:Preview Cached: photoalbum - 53
+INFO:root:Cached: photoalbum - 50
+INFO:root:storage size : 170.58
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 54
+INFO:root:Cached: photoalbum - 51
+INFO:root:storage size : 173.24
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 55
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 52
+INFO:root:storage size : 175.91
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 56
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 53
+INFO:root:wheel_photoalbum
+INFO:root:storage size : 178.58
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 27
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:Preview Cached: photoalbum - 57
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 54
+INFO:root:storage size : 181.24
+INFO:root:Preview Cached: photoalbum - 58
+INFO:root:Cached: photoalbum - 55
+INFO:root:storage size : 183.91
+INFO:root:Preview Cached: photoalbum - 59
+INFO:root:Cached: photoalbum - 56
+INFO:root:storage size : 185.1
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 60
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 57
+INFO:root:storage size : 187.76
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 61
+INFO:root:Cached: photoalbum - 58
+INFO:root:storage size : 188.95
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 62
+INFO:root:Cached: photoalbum - 59
+INFO:root:wheel_photoalbum
+INFO:root:storage size : 190.13
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 63
+INFO:root:Cached: photoalbum - 60
+INFO:root:storage size : 192.8
+INFO:root:Cached: photoalbum - 61
+INFO:root:storage size : 195.47
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 28
+INFO:root:Preview Cached: photoalbum - 64
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 62
+INFO:root:storage size : 198.13
+INFO:root:Preview Cached: photoalbum - 65
+INFO:root:Cached: photoalbum - 63
+INFO:root:storage size : 200.8
+INFO:root:Preview Cached: photoalbum - 66
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 64
+INFO:root:storage size : 203.47
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Preview Cached: photoalbum - 67
+INFO:root:Auto Preview storage done: photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 65
+INFO:root:storage size : 206.13
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 66
+INFO:root:storage size : 208.8
+INFO:root:Auto storage done: photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 29
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 30
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:wheel_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 31
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:hide_listbox
+INFO:root:event_focusin
+INFO:root:fullforward
+INFO:root:forward - 32
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 33
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 34
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 35
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 36
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 37
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:failed to modify ie_listbox20
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:failed to modify ie_listbox20
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:failed to modify ie_listbox20
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 38
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 39
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 40
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 41
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 42
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 43
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 44
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 45
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 46
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:start backend_preview_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 67
+INFO:root:Preview Cached: photoalbum - 68
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:storage size : 211.47
+INFO:root:Preview Cached: photoalbum - 69
+INFO:root:Cached: photoalbum - 68
+INFO:root:storage size : 214.13
+INFO:root:Preview Cached: photoalbum - 70
+INFO:root:Cached: photoalbum - 69
+INFO:root:storage size : 216.8
+INFO:root:Preview Cached: photoalbum - 71
+INFO:root:Cached: photoalbum - 70
+INFO:root:storage size : 219.47
+INFO:root:Preview Cached: photoalbum - 72
+INFO:root:Cached: photoalbum - 71
+INFO:root:storage size : 222.13
+INFO:root:Preview Cached: photoalbum - 73
+INFO:root:Cached: photoalbum - 72
+INFO:root:storage size : 224.8
+INFO:root:Preview Cached: photoalbum - 74
+INFO:root:Cached: photoalbum - 73
+INFO:root:storage size : 225.98
+INFO:root:Preview Cached: photoalbum - 75
+INFO:root:Cached: photoalbum - 74
+INFO:root:storage size : 227.17
+INFO:root:Preview Cached: photoalbum - 76
+INFO:root:Cached: photoalbum - 75
+INFO:root:storage size : 228.35
+INFO:root:Preview Cached: photoalbum - 77
+INFO:root:Cached: photoalbum - 76
+INFO:root:storage size : 229.54
+INFO:root:Preview Cached: photoalbum - 78
+INFO:root:Cached: photoalbum - 77
+INFO:root:storage size : 230.73
+INFO:root:Preview Cached: photoalbum - 79
+INFO:root:Cached: photoalbum - 78
+INFO:root:storage size : 233.39
+INFO:root:Cached: photoalbum - 79
+INFO:root:storage size : 234.58
+INFO:root:Preview Cached: photoalbum - 80
+INFO:root:Cached: photoalbum - 80
+INFO:root:storage size : 235.76
+INFO:root:Preview Cached: photoalbum - 81
+INFO:root:Cached: photoalbum - 81
+INFO:root:storage size : 236.95
+INFO:root:Preview Cached: photoalbum - 82
+INFO:root:Cached: photoalbum - 82
+INFO:root:storage size : 238.13
+INFO:root:Preview Cached: photoalbum - 83
+INFO:root:Cached: photoalbum - 83
+INFO:root:storage size : 239.32
+INFO:root:Preview Cached: photoalbum - 84
+INFO:root:Cached: photoalbum - 84
+INFO:root:storage size : 240.5
+INFO:root:Preview Cached: photoalbum - 85
+INFO:root:Cached: photoalbum - 85
+INFO:root:storage size : 241.69
+INFO:root:Preview Cached: photoalbum - 86
+INFO:root:Cached: photoalbum - 86
+INFO:root:storage size : 244.35
+INFO:root:Auto storage done: photoalbum
+INFO:root:Preview Cached: photoalbum - 87
+INFO:root:Auto Preview storage done: photoalbum
+INFO:root:fullforward
+INFO:root:forward - 47
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 48
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 49
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 50
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 51
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 52
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:event_focusin
+INFO:root:zoomin_photoalbum
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 52
+INFO:root:storage size : 62.99
+INFO:root:Cached: photoalbum - 52
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:storage size : 62.99
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:Cached: photoalbum - 53
+INFO:root:storage size : 66.22
+INFO:root:zoomin_photoalbum
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:storage size : 70.06
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:thread stopped
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 52
+INFO:root:storage size : 63.6
+INFO:root:Cached: photoalbum - 52
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:storage size : 63.6
+INFO:root:event_focusin
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 53
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:storage size : 67.44
+INFO:root:Cached: photoalbum - 54
+INFO:root:storage size : 71.28
+INFO:root:Cached: photoalbum - 55
+INFO:root:storage size : 75.12
+INFO:root:Cached: photoalbum - 56
+INFO:root:storage size : 76.83
+INFO:root:Cached: photoalbum - 57
+INFO:root:storage size : 80.67
+INFO:root:Cached: photoalbum - 58
+INFO:root:storage size : 82.38
+INFO:root:Cached: photoalbum - 59
+INFO:root:storage size : 84.08
+INFO:root:Cached: photoalbum - 60
+INFO:root:storage size : 87.92
+INFO:root:Cached: photoalbum - 61
+INFO:root:storage size : 91.76
+INFO:root:Cached: photoalbum - 62
+INFO:root:storage size : 95.6
+INFO:root:Cached: photoalbum - 63
+INFO:root:storage size : 99.44
+INFO:root:Cached: photoalbum - 64
+INFO:root:storage size : 103.28
+INFO:root:Cached: photoalbum - 65
+INFO:root:storage size : 107.12
+INFO:root:Cached: photoalbum - 66
+INFO:root:storage size : 110.96
+INFO:root:Cached: photoalbum - 67
+INFO:root:storage size : 114.8
+INFO:root:Cached: photoalbum - 68
+INFO:root:storage size : 118.64
+INFO:root:Cached: photoalbum - 69
+INFO:root:storage size : 122.48
+INFO:root:Cached: photoalbum - 70
+INFO:root:storage size : 126.32
+INFO:root:Cached: photoalbum - 71
+INFO:root:storage size : 130.16
+INFO:root:Cached: photoalbum - 72
+INFO:root:storage size : 134.0
+INFO:root:Cached: photoalbum - 73
+INFO:root:storage size : 135.71
+INFO:root:Cached: photoalbum - 74
+INFO:root:storage size : 137.42
+INFO:root:Cached: photoalbum - 75
+INFO:root:storage size : 139.12
+INFO:root:Cached: photoalbum - 76
+INFO:root:storage size : 140.83
+INFO:root:Cached: photoalbum - 77
+INFO:root:storage size : 142.54
+INFO:root:Cached: photoalbum - 78
+INFO:root:storage size : 146.38
+INFO:root:Cached: photoalbum - 79
+INFO:root:storage size : 148.08
+INFO:root:Cached: photoalbum - 80
+INFO:root:storage size : 149.79
+INFO:root:Cached: photoalbum - 81
+INFO:root:storage size : 151.5
+INFO:root:Cached: photoalbum - 82
+INFO:root:storage size : 153.2
+INFO:root:Cached: photoalbum - 83
+INFO:root:storage size : 154.91
+INFO:root:Cached: photoalbum - 84
+INFO:root:storage size : 156.62
+INFO:root:Cached: photoalbum - 85
+INFO:root:storage size : 158.32
+INFO:root:Cached: photoalbum - 86
+INFO:root:storage size : 162.16
+INFO:root:Cached: photoalbum - 87
+INFO:root:storage size : 166.0
+INFO:root:Cached: photoalbum - 88
+INFO:root:storage size : 167.71
+INFO:root:Cached: photoalbum - 89
+INFO:root:storage size : 171.55
+INFO:root:Cached: photoalbum - 90
+INFO:root:storage size : 173.26
+INFO:root:Cached: photoalbum - 91
+INFO:root:storage size : 174.96
+INFO:root:Cached: photoalbum - 92
+INFO:root:storage size : 176.67
+INFO:root:Auto storage done: photoalbum
+INFO:root:fullforward
+INFO:root:forward - 53
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 54
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 55
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:failed to modify ie_listbox20
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_ImageEnhance
+INFO:root:fullforward
+INFO:root:forward - 56
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 57
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 58
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 59
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 60
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 61
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 62
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 63
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 64
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 65
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 66
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 67
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 68
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 69
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 70
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 71
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:clockwise
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 72
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:start backend_preview_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 93
+INFO:root:Preview Cached: photoalbum - 73
+INFO:root:storage size : 178.38
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Preview Cached: photoalbum - 74
+INFO:root:Cached: photoalbum - 94
+INFO:root:storage size : 180.08
+INFO:root:Preview Cached: photoalbum - 75
+INFO:root:Cached: photoalbum - 95
+INFO:root:storage size : 181.79
+INFO:root:Preview Cached: photoalbum - 76
+INFO:root:Cached: photoalbum - 96
+INFO:root:storage size : 185.63
+INFO:root:Preview Cached: photoalbum - 77
+INFO:root:Cached: photoalbum - 97
+INFO:root:storage size : 187.34
+INFO:root:Preview Cached: photoalbum - 78
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 191.18
+INFO:root:Preview Cached: photoalbum - 79
+INFO:root:Cached: photoalbum - 99
+INFO:root:storage size : 192.88
+INFO:root:Preview Cached: photoalbum - 80
+INFO:root:Cached: photoalbum - 100
+INFO:root:storage size : 196.72
+INFO:root:Preview Cached: photoalbum - 81
+INFO:root:Cached: photoalbum - 101
+INFO:root:storage size : 200.56
+INFO:root:Preview Cached: photoalbum - 82
+INFO:root:Cached: photoalbum - 102
+INFO:root:storage size : 202.27
+INFO:root:Preview Cached: photoalbum - 83
+INFO:root:Cached: photoalbum - 0
+INFO:root:storage size : 206.11
+INFO:root:Preview Cached: photoalbum - 84
+INFO:root:Cached: photoalbum - 1
+INFO:root:storage size : 209.95
+INFO:root:Preview Cached: photoalbum - 85
+INFO:root:Cached: photoalbum - 2
+INFO:root:storage size : 213.79
+INFO:root:Preview Cached: photoalbum - 86
+INFO:root:Cached: photoalbum - 3
+INFO:root:storage size : 217.63
+INFO:root:Preview Cached: photoalbum - 87
+INFO:root:Cached: photoalbum - 4
+INFO:root:storage size : 221.47
+INFO:root:Preview Cached: photoalbum - 88
+INFO:root:Cached: photoalbum - 5
+INFO:root:storage size : 225.31
+INFO:root:Preview Cached: photoalbum - 89
+INFO:root:Cached: photoalbum - 6
+INFO:root:storage size : 229.15
+INFO:root:Preview Cached: photoalbum - 90
+INFO:root:Cached: photoalbum - 7
+INFO:root:storage size : 232.99
+INFO:root:Preview Cached: photoalbum - 91
+INFO:root:Cached: photoalbum - 8
+INFO:root:storage size : 236.83
+INFO:root:Preview Cached: photoalbum - 92
+INFO:root:Cached: photoalbum - 9
+INFO:root:storage size : 240.67
+INFO:root:Auto storage done: photoalbum
+INFO:root:Preview Cached: photoalbum - 93
+INFO:root:Preview Cached: photoalbum - 94
+INFO:root:Preview Cached: photoalbum - 95
+INFO:root:Preview Cached: photoalbum - 96
+INFO:root:Preview Cached: photoalbum - 97
+INFO:root:Preview Cached: photoalbum - 98
+INFO:root:Preview Cached: photoalbum - 99
+INFO:root:Preview Cached: photoalbum - 100
+INFO:root:Preview Cached: photoalbum - 101
+INFO:root:Preview Cached: photoalbum - 102
+INFO:root:Preview Cached: photoalbum - 0
+INFO:root:Preview Cached: photoalbum - 1
+INFO:root:Preview Cached: photoalbum - 2
+INFO:root:Preview Cached: photoalbum - 3
+INFO:root:Preview Cached: photoalbum - 4
+INFO:root:Preview Cached: photoalbum - 5
+INFO:root:Preview Cached: photoalbum - 6
+INFO:root:Preview Cached: photoalbum - 7
+INFO:root:Preview Cached: photoalbum - 8
+INFO:root:Preview Cached: photoalbum - 9
+INFO:root:Preview Cached: photoalbum - 10
+INFO:root:Auto Preview storage done: photoalbum
+INFO:root:fullforward
+INFO:root:forward - 73
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 74
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 75
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 76
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 77
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 78
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 79
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 80
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 81
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 82
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:event_focusin
+INFO:root:zoomout_photoalbum
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:storage size : 61.2
+INFO:root:Cached: photoalbum - 82
+INFO:root:Cached: photoalbum - 82
+INFO:root:storage size : 61.2
+INFO:root:Cached: photoalbum - 83
+INFO:root:storage size : 62.63
+INFO:root:zoomout_photoalbum
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:storage size : 62.63
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:thread stopped
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 82
+INFO:root:storage size : 60.95
+INFO:root:Cached: photoalbum - 82
+INFO:root:storage size : 60.95
+INFO:root:event_focusin
+INFO:root:Cached: photoalbum - 83
+INFO:root:storage size : 62.13
+INFO:root:Cached: photoalbum - 84
+INFO:root:storage size : 63.32
+INFO:root:Cached: photoalbum - 85
+INFO:root:storage size : 64.5
+INFO:root:Cached: photoalbum - 86
+INFO:root:storage size : 67.17
+INFO:root:Cached: photoalbum - 87
+INFO:root:storage size : 69.84
+INFO:root:Cached: photoalbum - 88
+INFO:root:storage size : 71.02
+INFO:root:Cached: photoalbum - 89
+INFO:root:storage size : 73.69
+INFO:root:Cached: photoalbum - 90
+INFO:root:storage size : 74.87
+INFO:root:Cached: photoalbum - 91
+INFO:root:storage size : 76.06
+INFO:root:Cached: photoalbum - 92
+INFO:root:storage size : 77.24
+INFO:root:Cached: photoalbum - 93
+INFO:root:storage size : 78.43
+INFO:root:Cached: photoalbum - 94
+INFO:root:storage size : 79.61
+INFO:root:Cached: photoalbum - 95
+INFO:root:storage size : 80.8
+INFO:root:Cached: photoalbum - 96
+INFO:root:storage size : 83.47
+INFO:root:Cached: photoalbum - 97
+INFO:root:storage size : 84.65
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 87.32
+INFO:root:Cached: photoalbum - 99
+INFO:root:storage size : 88.5
+INFO:root:Cached: photoalbum - 100
+INFO:root:storage size : 91.17
+INFO:root:Cached: photoalbum - 101
+INFO:root:storage size : 93.84
+INFO:root:Cached: photoalbum - 102
+INFO:root:storage size : 95.02
+INFO:root:Cached: photoalbum - 0
+INFO:root:storage size : 97.69
+INFO:root:Cached: photoalbum - 1
+INFO:root:storage size : 100.35
+INFO:root:Cached: photoalbum - 2
+INFO:root:storage size : 103.02
+INFO:root:Cached: photoalbum - 3
+INFO:root:storage size : 105.69
+INFO:root:Cached: photoalbum - 4
+INFO:root:storage size : 108.35
+INFO:root:Cached: photoalbum - 5
+INFO:root:storage size : 111.02
+INFO:root:Cached: photoalbum - 6
+INFO:root:storage size : 113.69
+INFO:root:Cached: photoalbum - 7
+INFO:root:storage size : 116.35
+INFO:root:Cached: photoalbum - 8
+INFO:root:storage size : 119.02
+INFO:root:Cached: photoalbum - 9
+INFO:root:storage size : 121.69
+INFO:root:Cached: photoalbum - 10
+INFO:root:storage size : 124.35
+INFO:root:Cached: photoalbum - 11
+INFO:root:storage size : 127.02
+INFO:root:Cached: photoalbum - 12
+INFO:root:storage size : 129.69
+INFO:root:Cached: photoalbum - 13
+INFO:root:storage size : 132.35
+INFO:root:Cached: photoalbum - 14
+INFO:root:storage size : 133.54
+INFO:root:Cached: photoalbum - 15
+INFO:root:storage size : 134.73
+INFO:root:Cached: photoalbum - 16
+INFO:root:storage size : 137.39
+INFO:root:Cached: photoalbum - 17
+INFO:root:storage size : 138.58
+INFO:root:Cached: photoalbum - 18
+INFO:root:storage size : 139.76
+INFO:root:Cached: photoalbum - 19
+INFO:root:storage size : 142.43
+INFO:root:Auto storage done: photoalbum
+INFO:root:fullforward
+INFO:root:forward - 83
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 84
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 85
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 86
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 87
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 88
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:fullforward
+INFO:root:forward - 89
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 90
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 91
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 92
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 93
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 94
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 95
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 96
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 97
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:forward_photoalbum
+INFO:root:fullforward
+INFO:root:forward - 98
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:ShowIMG_Preview
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:event_focusin
+INFO:root:zoomout_photoalbum
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 61.92
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 61.92
+INFO:root:Cached: photoalbum - 99
+INFO:root:storage size : 62.88
+INFO:root:zoomout_photoalbum
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:storage size : 62.88
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:thread stopped
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 61.47
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 61.47
+INFO:root:zoomout_photoalbum
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:storage size : 62.31
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:thread stopped
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 61.07
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 61.07
+INFO:root:zoomout_photoalbum
+INFO:root:Cached: photoalbum - 99
+INFO:root:thread stopped
+INFO:root:zoomout_photoalbum
+INFO:root:storage size : 59.76
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:event_focusin
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 60.72
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 60.72
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 99
+INFO:root:storage size : 61.57
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 100
+INFO:root:storage size : 62.53
+INFO:root:Cached: photoalbum - 101
+INFO:root:storage size : 63.49
+INFO:root:pause_auto
+INFO:root:Cached: photoalbum - 102
+INFO:root:storage size : 64.33
+INFO:root:Cached: photoalbum - 0
+INFO:root:storage size : 65.29
+INFO:root:Cached: photoalbum - 1
+INFO:root:storage size : 66.25
+INFO:root:zoomout_photoalbum
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:storage size : 66.25
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:thread stopped
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 60.57
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 60.57
+INFO:root:Cached: photoalbum - 99
+INFO:root:storage size : 61.41
+INFO:root:zoomout_photoalbum
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:storage size : 61.41
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:thread stopped
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 60.43
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 60.43
+INFO:root:event_focusin
+INFO:root:Cached: photoalbum - 99
+INFO:root:storage size : 61.27
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 100
+INFO:root:storage size : 61.94
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 101
+INFO:root:storage size : 62.61
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 102
+INFO:root:storage size : 63.45
+INFO:root:Cached: photoalbum - 0
+INFO:root:storage size : 64.12
+INFO:root:Cached: photoalbum - 1
+INFO:root:storage size : 64.78
+INFO:root:Cached: photoalbum - 2
+INFO:root:wheel_photoalbum
+INFO:root:storage size : 65.45
+INFO:root:Cached: photoalbum - 3
+INFO:root:storage size : 66.12
+INFO:root:Cached: photoalbum - 4
+INFO:root:storage size : 66.78
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 5
+INFO:root:storage size : 67.45
+INFO:root:Cached: photoalbum - 6
+INFO:root:storage size : 68.12
+INFO:root:Cached: photoalbum - 7
+INFO:root:storage size : 68.78
+INFO:root:event_focusin
+INFO:root:Cached: photoalbum - 8
+INFO:root:storage size : 69.45
+INFO:root:Cached: photoalbum - 9
+INFO:root:storage size : 70.12
+INFO:root:Cached: photoalbum - 10
+INFO:root:storage size : 70.78
+INFO:root:zoomout_photoalbum
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:storage size : 70.78
+INFO:root:Auto storage stopped: photoalbum
+INFO:root:thread stopped
+INFO:root:event_focusin
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start photoalbum thread
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 60.3
+INFO:root:Cached: photoalbum - 98
+INFO:root:storage size : 60.3
+INFO:root:Cached: photoalbum - 99
+INFO:root:storage size : 61.15
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 100
+INFO:root:storage size : 61.69
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 101
+INFO:root:wheel_photoalbum
+INFO:root:storage size : 62.23
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 102
+INFO:root:storage size : 63.07
+INFO:root:Cached: photoalbum - 0
+INFO:root:storage size : 63.61
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 1
+INFO:root:storage size : 64.15
+INFO:root:Cached: photoalbum - 2
+INFO:root:storage size : 64.69
+INFO:root:wheel_photoalbum
+INFO:root:Cached: photoalbum - 3
+INFO:root:storage size : 65.23
+INFO:root:Cached: photoalbum - 4
+INFO:root:storage size : 65.77
+INFO:root:Cached: photoalbum - 5
+INFO:root:storage size : 66.31
+INFO:root:Cached: photoalbum - 6
+INFO:root:storage size : 66.85
+INFO:root:Cached: photoalbum - 7
+INFO:root:storage size : 67.39
+INFO:root:Cached: photoalbum - 8
+INFO:root:storage size : 67.93
+INFO:root:Cached: photoalbum - 9
+INFO:root:storage size : 68.47
+INFO:root:Cached: photoalbum - 10
+INFO:root:storage size : 69.01
+INFO:root:Cached: photoalbum - 11
+INFO:root:storage size : 69.55
+INFO:root:Cached: photoalbum - 12
+INFO:root:storage size : 70.09
+INFO:root:Cached: photoalbum - 13
+INFO:root:storage size : 70.63
+INFO:root:Cached: photoalbum - 14
+INFO:root:storage size : 71.47
+INFO:root:Cached: photoalbum - 15
+INFO:root:storage size : 72.32
+INFO:root:Cached: photoalbum - 16
+INFO:root:storage size : 72.86
+INFO:root:Cached: photoalbum - 17
+INFO:root:storage size : 73.7
+INFO:root:Cached: photoalbum - 18
+INFO:root:storage size : 74.54
+INFO:root:Cached: photoalbum - 19
+INFO:root:storage size : 75.08
+INFO:root:Cached: photoalbum - 20
+INFO:root:storage size : 75.62
+INFO:root:Cached: photoalbum - 21
+INFO:root:storage size : 76.47
+INFO:root:Cached: photoalbum - 22
+INFO:root:storage size : 77.31
+INFO:root:Cached: photoalbum - 23
+INFO:root:storage size : 78.16
+INFO:root:Cached: photoalbum - 24
+INFO:root:storage size : 78.7
+INFO:root:Cached: photoalbum - 25
+INFO:root:storage size : 79.24
+INFO:root:Cached: photoalbum - 26
+INFO:root:storage size : 80.08
+INFO:root:Cached: photoalbum - 27
+INFO:root:storage size : 80.62
+INFO:root:Cached: photoalbum - 28
+INFO:root:storage size : 81.46
+INFO:root:Cached: photoalbum - 29
+INFO:root:storage size : 82.0
+INFO:root:Cached: photoalbum - 30
+INFO:root:storage size : 82.54
+INFO:root:Cached: photoalbum - 31
+INFO:root:storage size : 83.08
+INFO:root:Cached: photoalbum - 32
+INFO:root:storage size : 83.62
+INFO:root:Cached: photoalbum - 33
+INFO:root:storage size : 84.47
+INFO:root:Cached: photoalbum - 34
+INFO:root:storage size : 85.31
+INFO:root:Cached: photoalbum - 35
+INFO:root:storage size : 85.85
+INFO:root:Auto storage done: photoalbum
+INFO:root:quit_photoalbum
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:quit_slide
+INFO:root:back_simple_full
+INFO:root:failed to unbind s
+INFO:root:ShowIMG_Full
+INFO:root:storage size : 85.85
+INFO:root:Cached: fulllevel - 98
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:Cached: fulllevel - 14
+INFO:root:storage size : 60.61
+INFO:root:Cached: fulllevel - 15
+INFO:root:storage size : 61.45
+INFO:root:Cached: fulllevel - 16
+INFO:root:storage size : 61.82
+INFO:root:Cached: fulllevel - 17
+INFO:root:storage size : 62.67
+INFO:root:Cached: fulllevel - 18
+INFO:root:storage size : 63.51
+INFO:root:Cached: fulllevel - 19
+INFO:root:storage size : 63.89
+INFO:root:Cached: fulllevel - 20
+INFO:root:storage size : 64.26
+INFO:root:quit_full
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:Auto storage stopped: fulllevel
+INFO:root:storage size : 64.26
+INFO:root:Auto storage stopped: fulllevel
+INFO:root:thread stopped
+INFO:root:start backend_storage: window
+INFO:root:ShowIMG
+INFO:root:event_focusin
+INFO:root:storage size : 64.26
+INFO:root:Cached: window - 98
+INFO:root:Cached: window - 99
+INFO:root:storage size : 64.82
+INFO:root:Cached: window - 100
+INFO:root:storage size : 65.07
+INFO:root:Cached: window - 101
+INFO:root:storage size : 65.32
+INFO:root:event_focusin
+INFO:root:Cached: window - 102
+INFO:root:storage size : 65.88
+INFO:root:Auto storage done: window
+INFO:root:quit
+INFO:root:setting_create
+INFO:root:setting_ok
+INFO:root:setting_hide

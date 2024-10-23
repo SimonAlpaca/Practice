@@ -10088,8 +10088,9 @@ def exception_unidentifiedimage():
 
 if __name__ == "__main__":
     # set winfo size to fit with screen size, but the running speed is much slower
-    # current winfo size is 1536x864, instead of 1920x1080
-    windll.shcore.SetProcessDpiAwareness(0) # your windows version should >= 8.1, otherwise it will raise exception.
+    # SetProcessDpiAwareness(0) : 1536x864
+    # SetProcessDpiAwareness(1) : 1920x1080
+    windll.shcore.SetProcessDpiAwareness(1) # your windows version should >= 8.1, otherwise it will raise exception.
     
     logging_create()
     

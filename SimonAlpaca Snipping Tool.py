@@ -644,8 +644,13 @@ class WindowGUI(tk.Frame):
             image_position = {"top": top, "left": left, "width": width, "height": height}
             # print(image_position)
             screenshot = mss_instance.grab(image_position)
-            
+
         screenshot = PIL.Image.frombytes("RGB", screenshot.size, screenshot.bgra, "raw", "BGRX")  # Convert to PIL.Image
+        
+        # print(screenshot.size)
+        # dpi =screenshot.info.get('dpi',(72,72))
+        # print(f'Image DPI: {dpi[0]}x{dpi[1]} DPI')
+        
         img_np = np.array(screenshot)
         img = cv2.cvtColor(np.array(img_np), cv2.COLOR_RGB2BGR)
         
@@ -1110,6 +1115,7 @@ class WindowGUI(tk.Frame):
         i = 1
         while True:
             output_file = "img_" + str(i).rjust(4, "0") + ".jpg"
+            # output_file = "img_" + str(i).rjust(4, "0") + ".png"
             output_path = os.path.join(output_dir, output_file)
             if os.path.exists(output_path):
                 i = i + 1
@@ -1118,6 +1124,7 @@ class WindowGUI(tk.Frame):
                 break
         
         cv2.imwrite(output_path, self.temp_img)
+        # cv2.imwrite(output_path, self.temp_img, [cv2.IMWRITE_PNG_COMPRESSION, 0])
         print("Img Generated")
         self.progress_text.delete('1.0', '2.0')
         self.progress_text.insert("1.0", "Image Generated")
