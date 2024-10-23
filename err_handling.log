@@ -7,5 +7,14 @@ INFO:root:select_controller_create
 INFO:root:video_create
 INFO:root:set_appwindow
 INFO:root:show_appwindow
-INFO:root:setting_buttonclick
+INFO:root:image_button_click
+INFO:root:clear_temp_files
+INFO:root:area_enter
+INFO:root:window_hide
+INFO:root:area_cancel
+INFO:root:area_quit
+INFO:root:window_unhide
+INFO:root:quit
+INFO:root:clear_temp_files
+INFO:root:setting_ok
 INFO:root:setting_hide

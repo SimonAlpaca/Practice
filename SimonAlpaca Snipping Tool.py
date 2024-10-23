@@ -415,14 +415,24 @@ class WindowGUI(tk.Frame):
         self.select_text03.delete("1.0","2.0")
         self.select_text04.delete("1.0","2.0")
         
-        # Draw Area
-        # pre_i = self.i
-        # self.i = self.i + 1
-    
-        # globals()["rect_%s" %self.i] = self.area_canvas.create_rectangle(self.left, self.top, self.width, self.height, fill='white')
-        
-        # if pre_i != 0 :
-        #     self.area_canvas.delete(globals()["rect_%s" %pre_i])
+        if self.is_predefine:  
+            # Draw Area
+            pre_i = self.i
+            self.i = self.i + 1
+            
+            width = int(self.predefine_w) + left
+            height = int(self.predefine_h) + top
+
+            self.select_text03.delete("1.0","2.0")
+            self.select_text03.insert("1.0", self.predefine_w) 
+            
+            self.select_text04.delete("1.0","2.0")
+            self.select_text04.insert("1.0", self.predefine_h) 
+            
+            globals()["rect_%s" %self.i] = self.area_canvas.create_rectangle(left, top, width, height, fill='white')
+            
+            if pre_i != 0 :
+                self.area_canvas.delete(globals()["rect_%s" %pre_i])
     
     def area_predrag(self, event):
         print("area_predrag")
