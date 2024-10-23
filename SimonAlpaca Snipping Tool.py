@@ -366,7 +366,9 @@ class WindowGUI(tk.Frame):
         self.select_con.deiconify()
         self.select_con.attributes('-topmost', True)
         self.select_con.update()
-
+        
+        self.motion1 = self.select_area.bind('<Motion>', self.area_motion)
+        
         self.i = 0
     
     def area_cancel(self, event=None):
@@ -400,9 +402,33 @@ class WindowGUI(tk.Frame):
         self.select_con.withdraw()
         self.select_con.attributes('-topmost', False)
     
+    def area_motion(self, event):
+        left = event.x
+        top = event.y
+       
+        self.select_text01.delete("1.0","2.0")
+        self.select_text01.insert("1.0", left) 
+
+        self.select_text02.delete("1.0","2.0")
+        self.select_text02.insert("1.0", top) 
+              
+        self.select_text03.delete("1.0","2.0")
+        self.select_text04.delete("1.0","2.0")
+        
+        # Draw Area
+        # pre_i = self.i
+        # self.i = self.i + 1
+    
+        # globals()["rect_%s" %self.i] = self.area_canvas.create_rectangle(self.left, self.top, self.width, self.height, fill='white')
+        
+        # if pre_i != 0 :
+        #     self.area_canvas.delete(globals()["rect_%s" %pre_i])
+    
     def area_predrag(self, event):
         print("area_predrag")
         logging.info("area_predrag")
+        
+        self.select_area.unbind('<Motion>', self.motion1)
         
         self.left = event.x
         self.top = event.y
@@ -1297,6 +1323,10 @@ class WindowGUI(tk.Frame):
         self.is_cursor = False
         self.cursor_check.set(False)                        # include subfolder
         
+        self.predefine_check = tk.BooleanVar()
+        self.is_predefine = False
+        self.predefine_check.set(False)                        # include subfolder
+        
         exe_dir = os.path.split(sys.argv[0])[0]        # sys.argv[0] is the exe path
         self.save_path = os.path.join(exe_dir, "output")
         self.temp_dir_png = os.path.join(exe_dir, r"temp\png")
@@ -1316,6 +1346,9 @@ class WindowGUI(tk.Frame):
         
         self.delay = 0
         
+        self.predefine_w = 512
+        self.predefine_h = 512
+        
         self.frame_rate = 30
         
         # Import config
@@ -1330,6 +1363,10 @@ class WindowGUI(tk.Frame):
         self.skiparea_check.set(self.is_skiparea)
         self.is_cursor = self.getconfig("cursor_check", self.is_cursor) # disable getting parent_check
         self.cursor_check.set(self.is_cursor)
+        self.is_predefine = self.getconfig("predefine_check", self.is_predefine) 
+        self.predefine_check.set(self.is_predefine)
+        self.predefine_w = str(self.getconfig("predefine_w", self.predefine_w))
+        self.predefine_h = str(self.getconfig("predefine_h", self.predefine_h))
         self.vid_saveas = str(self.getconfig("vid_saveas", self.vid_saveas))
         self.save_path = str(self.getconfig("save_path", self.save_path))
         self.delay = str(self.getconfig("delay", self.delay))
@@ -1378,7 +1415,7 @@ class WindowGUI(tk.Frame):
         
         self.settings.resizable(False,False)
         self.settings.overrideredirect(1)
-        self.settings.geometry('650x480+%d+%d' %(int(self.setting_x), int(self.setting_y)))    # re adjust list position
+        self.settings.geometry('650x570+%d+%d' %(int(self.setting_x), int(self.setting_y)))    # re adjust list position
 
         self.setting_frame_top = tk.Frame(self.settings)             
         self.setting_frame_top.pack(pady=0, side = tk.TOP, fill=tk.BOTH)
@@ -1397,6 +1434,15 @@ class WindowGUI(tk.Frame):
         
         self.setting_frame04 = tk.Frame(self.settings)             
         self.setting_frame04.pack(pady=5, side = tk.TOP, fill=tk.BOTH)
+        
+        self.setting_frame05 = tk.Frame(self.settings)             
+        self.setting_frame05.pack(pady=5, side = tk.TOP, fill=tk.BOTH)
+        
+        self.setting_frame06 = tk.Frame(self.settings)             
+        self.setting_frame06.pack(pady=5, side = tk.TOP, fill=tk.BOTH)
+        
+        self.setting_frame07 = tk.Frame(self.settings)             
+        self.setting_frame07.pack(pady=5, side = tk.TOP, fill=tk.BOTH)
         
         self.setting_frame10 = tk.Frame(self.settings, background='gray25')             
         self.setting_frame10.pack(pady=10, side = tk.TOP, fill=tk.BOTH)
@@ -1435,6 +1481,14 @@ class WindowGUI(tk.Frame):
         self.setting_entry02.insert(1, self.save_path)
         self.setting_entry02.pack(pady=0, padx = 15, side= tk.RIGHT)
         
+        self.setting_entry06 = tk.Entry(self.setting_frame06, width=6, background='gray25')
+        self.setting_entry06.insert(1, self.predefine_w)
+        self.setting_entry06.pack(pady=0, padx = 10, side= tk.RIGHT)
+        
+        self.setting_entry07 = tk.Entry(self.setting_frame07, width=6, background='gray25')
+        self.setting_entry07.insert(1, self.predefine_h)
+        self.setting_entry07.pack(pady=0, padx = 10, side= tk.RIGHT)
+        
         self.setting_entry13 = tk.Entry(self.setting_frame13, width=6, background='gray25')
         self.setting_entry13.insert(1, self.frame_rate)
         self.setting_entry13.pack(pady=0, padx = 10, side= tk.RIGHT)
@@ -1444,6 +1498,15 @@ class WindowGUI(tk.Frame):
         
         self.setting_label04 = ttk.Label(self.setting_frame04, text = "    Skip Area Selection : " , style='fg.TLabel')
         self.setting_label04.pack(pady=0, side= tk.LEFT)
+        
+        self.setting_label05 = ttk.Label(self.setting_frame05, text = "    Pre-defined Width/Height : " , style='fg.TLabel')
+        self.setting_label05.pack(pady=0, side= tk.LEFT)
+        
+        self.setting_label06 = ttk.Label(self.setting_frame06, text = "    Pre-defined Width : " , style='fg.TLabel')
+        self.setting_label06.pack(pady=0, side= tk.LEFT)
+        
+        self.setting_label07 = ttk.Label(self.setting_frame07, text = "    Pre-defined Height : " , style='fg.TLabel')
+        self.setting_label07.pack(pady=0, side= tk.LEFT)
         
         self.setting_label11 = ttk.Label(self.setting_frame11, text = "    Video Save As : " , style='fg.TLabel')
         self.setting_label11.pack(pady=0, side= tk.LEFT)
@@ -1456,6 +1519,9 @@ class WindowGUI(tk.Frame):
         
         self.setting_check04 = ttk.Checkbutton(self.setting_frame04, text="", var=self.skiparea_check, style = "warning.Roundtoggle.Toolbutton")
         self.setting_check04.pack(pady=0, padx = 0, side= tk.RIGHT)
+        
+        self.setting_check05 = ttk.Checkbutton(self.setting_frame05, text="", var=self.predefine_check, style = "warning.Roundtoggle.Toolbutton")
+        self.setting_check05.pack(pady=0, padx = 0, side= tk.RIGHT)
         
         self.setting_check12 = ttk.Checkbutton(self.setting_frame12, text="", var=self.cursor_check, style = "warning.Roundtoggle.Toolbutton")
         self.setting_check12.pack(pady=0, padx = 0, side= tk.RIGHT)
@@ -1522,6 +1588,8 @@ class WindowGUI(tk.Frame):
         self.is_skiparea = self.skiparea_check.get()
         
         self.is_cursor = self.cursor_check.get()
+        
+        self.is_predefine = self.predefine_check.get()
 
         self.vid_saveas = self.vid_saveasstr.get()
         
@@ -1538,6 +1606,21 @@ class WindowGUI(tk.Frame):
         except:
             self.setting_error.config(text = "Not saved: Value must be integer")
             raise ValueError("Value must be integer") 
+
+        try:
+            self.predefine_w = int(self.setting_entry06.get())
+        
+        except:
+            self.setting_error.config(text = "Not saved: Value must be integer")
+            raise ValueError("Value must be integer") 
+            
+        try:
+            self.predefine_h = int(self.setting_entry07.get())
+        
+        except:
+            self.setting_error.config(text = "Not saved: Value must be integer")
+            
+            raise ValueError("Value must be integer")
             
         if self.frame_rate > 60:
             self.frame_rate = 60
@@ -1548,6 +1631,16 @@ class WindowGUI(tk.Frame):
             self.frame_rate = 1
             self.setting_entry13.delete(0, tk.END)
             self.setting_entry13.insert(1, self.frame_rate)
+            
+        if self.predefine_w < 1:
+            self.predefine_w = 1
+            self.setting_entry06.delete(0, tk.END)
+            self.setting_entry06.insert(1, self.predefine_w)
+            
+        if self.predefine_h < 1:
+            self.predefine_h = 1
+            self.setting_entry07.delete(0, tk.END)
+            self.setting_entry07.insert(1, self.predefine_h)
         
         # except ValueError:
         #     exception_settingswrongvalue()
@@ -1581,10 +1674,13 @@ class WindowGUI(tk.Frame):
         finally:
             self.config.set("SnippingTool", "skiparea_check", str(self.is_skiparea))
             self.config.set("SnippingTool", "cursor_check", str(self.is_cursor))
+            self.config.set("SnippingTool", "predefine_check", str(self.is_predefine))
             self.config.set("SnippingTool", "vid_saveas", str(self.vid_saveas))
             self.config.set("SnippingTool", "delay", str(self.delay))
             self.config.set("SnippingTool", "save_path", str(self.save_path))
             self.config.set("SnippingTool", "frame_rate", str(self.frame_rate))
+            self.config.set("SnippingTool", "predefine_w", str(self.predefine_w))
+            self.config.set("SnippingTool", "predefine_h", str(self.predefine_h))
             self.config.set("SnippingTool", "window_x", str(self.window_x))
             self.config.set("SnippingTool", "window_y", str(self.window_y))
             self.config.set("SnippingTool", "setting_x", str(self.setting_x))

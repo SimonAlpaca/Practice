@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # author: SimonAlpaca
 # project v1.0 started on 25/8/2021, finished on 3/10/2021
-# testing123
+
 import os
 import sys
 import traceback
