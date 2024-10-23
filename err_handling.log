@@ -1,0 +1,11 @@
+INFO:root:window.__init__
+INFO:root:import_settings
+INFO:root:setting_create
+INFO:root:window_create
+INFO:root:select_area_create
+INFO:root:select_controller_create
+INFO:root:video_create
+INFO:root:set_appwindow
+INFO:root:show_appwindow
+INFO:root:setting_buttonclick
+INFO:root:setting_hide
