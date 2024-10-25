@@ -9285,6 +9285,10 @@ class SettingGUI(WindowGUI):
         # SetProcessDpiAwareness(0) : 1536x864
         # SetProcessDpiAwareness(1) : 1920x1080
         
+        user32 = windll.user32
+        hwnd = user32.GetForegroundWindow()
+        window_dpi = user32.GetDpiForWindow(hwnd)
+        
         if self.setting_dpistr == "100 Percent":
             set_DPI = 1
         
@@ -9292,10 +9296,11 @@ class SettingGUI(WindowGUI):
             set_DPI = 0
         
         windll.shcore.SetProcessDpiAwareness(set_DPI) # your windows version should >= 8.1, otherwise it will raise exception.
-      
-        # DPI
+        
         if set_DPI == 1:
             self.dpi_ratio = 1
+            window.full_w = window.full_w * window_dpi / 96
+            window.full_h = window.full_h * window_dpi / 96
         
         else:
             user32 = windll.user32
