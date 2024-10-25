@@ -1142,8 +1142,10 @@ class WindowGUI(tk.Frame):
         logging.info("window_create")
         
         # Window
-        self.parent.overrideredirect(True)                                  
-        self.parent.geometry('800x600+300+150')                                 # window size  
+        self.parent.overrideredirect(True)   
+        parent_w = int(1000 * settinglevel.dpi_ratio)   
+        parent_h = int(750 * settinglevel.dpi_ratio)                            
+        self.parent.geometry('%sx%s+300+150' %(parent_w, parent_h))                                 # window size  
         self.parent.resizable(width=True,height=True)                   # disallow window resize
         self.parent.title("SimonAlpaca Picture Viewer")                  # title
         self.parent.withdraw()
@@ -1599,7 +1601,10 @@ class WindowGUI(tk.Frame):
         
         self.gif_con.resizable(False,False)
         self.gif_con.overrideredirect(1)
-        self.gif_con.geometry("180x40+%d+%d" % (int(settinglevel.gif_con_x), int(settinglevel.gif_con_y)))
+        
+        gifcon_w = int(225 * settinglevel.dpi_ratio)   
+        gifcon_h = int(50 * settinglevel.dpi_ratio)                            
+        self.gif_con.geometry("%sx%s+%d+%d" % (gifcon_w, gifcon_h, int(settinglevel.gif_con_x), int(settinglevel.gif_con_y)))
                               
         self.gif_speeddown_button = ttk.Button(self.gif_con, text= u"\u2bec", width=2, style='my.TButton', command = self.gif_speeddown)
         self.gif_speeddown_button.pack(side =tk.LEFT, padx = 5)
@@ -2567,7 +2572,10 @@ class WindowGUI(tk.Frame):
         
         self.filter_con.resizable(False,False)
         self.filter_con.overrideredirect(1)
-        self.filter_con.geometry("320x145+%d+%d" % (int(settinglevel.listbox_x), int(settinglevel.listbox_y)))
+        
+        filtercon_w = int(400 * settinglevel.dpi_ratio)   
+        filtercon_h = int(185 * settinglevel.dpi_ratio)                            
+        self.filter_con.geometry("%sx%s+%d+%d" % (filtercon_w, filtercon_h, int(settinglevel.listbox_x), int(settinglevel.listbox_y)))
         
         self.wh_frame = ttk.Frame(self.filter_con, style='Warning.TFrame')           
         self.wh_frame.pack(pady=10, fill="y", side = tk.TOP)  
@@ -2876,7 +2884,10 @@ class WindowGUI(tk.Frame):
         
         self.web_con.resizable(False,False)
         self.web_con.overrideredirect(1)
-        self.web_con.geometry("300x270+%d+%d" % (int(settinglevel.webcon_x), int(settinglevel.webcon_y)))
+        
+        webcon_w = int(375 * settinglevel.dpi_ratio)   
+        webcon_h = int(340 * settinglevel.dpi_ratio)                            
+        self.web_con.geometry("%sx%s+%d+%d" % (webcon_w, webcon_h, int(settinglevel.webcon_x), int(settinglevel.webcon_y)))
         
         self.webcon1_frame = ttk.Frame(self.web_con, style='Warning.TFrame')           
         self.webcon1_frame.pack(pady=5, fill="y", side = tk.TOP)  
@@ -2987,7 +2998,10 @@ class WindowGUI(tk.Frame):
 
         self.web_popup.resizable(False,False)
         self.web_popup.overrideredirect(1)
-        self.web_popup.geometry("300x115+%d+%d" % (int(settinglevel.webpopup_x), int(settinglevel.webpopup_y)))
+        
+        webpopup_w = int(375 * settinglevel.dpi_ratio)   
+        webpopup_h = int(150 * settinglevel.dpi_ratio)                            
+        self.web_popup.geometry("%sx%s+%d+%d" % (webpopup_w, webpopup_h, int(settinglevel.webpopup_x), int(settinglevel.webpopup_y)))
         
         self.web1_frame = ttk.Frame(self.web_popup, style='Warning.TFrame')           
         self.web1_frame.pack(pady=10, fill="y", side = tk.TOP)  
@@ -6702,11 +6716,15 @@ class FullscreenGUI(WindowGUI):
         self.mon_x = monitor_area[0]
         self.mon_y = monitor_area[1]
         
+        fullcon_position_x = int(1190 / settinglevel.dpi_ratio)
+        fullcon_position_y = int(80 / settinglevel.dpi_ratio)
+        photocon_position_x = int(1250 / settinglevel.dpi_ratio)
+        mangacon_position_x = int(975 / settinglevel.dpi_ratio)
         self.popup.geometry("%dx%d+%d+%d" %(width, height, self.mon_x, self.mon_y)) 
-        self.full_con.geometry("+%d+%d" % (window.full_w / 2 + self.mon_x - 950 /2, window.full_h - 64 + self.mon_y))
-        self.photo_con.geometry("+%d+%d" % (window.full_w / 2 - 1000/2 + self.mon_x, window.full_h - 64 + self.mon_y))
+        self.full_con.geometry("+%d+%d" % (window.full_w / 2 + self.mon_x - fullcon_position_x /2, window.full_h - fullcon_position_y + self.mon_y))
+        self.photo_con.geometry("+%d+%d" % (window.full_w / 2 - photocon_position_x / 2 + self.mon_x, window.full_h - fullcon_position_y + self.mon_y))
         # self.photo_preview.geometry("+%d+%d" % (50 + self.mon_x, window.full_h - 250 + self.mon_y))
-        self.manga_con.geometry("+%d+%d" % (window.full_w / 2- 780 /2 + self.mon_x, window.full_h - 64 + self.mon_y))
+        self.manga_con.geometry("+%d+%d" % (window.full_w / 2- mangacon_position_x /2 + self.mon_x, window.full_h - fullcon_position_y + self.mon_y))
         
         self.popup.update()
         self.motion()
@@ -6811,7 +6829,12 @@ class FullscreenGUI(WindowGUI):
         
         self.full_con.resizable(False,False)
         self.full_con.overrideredirect(1)
-        self.full_con.geometry("1025x50+%d+%d" % (window.full_w / 2- 1025 /2, window.full_h - 64))
+        
+        fullcon_w = int(1285 / settinglevel.dpi_ratio)
+        fullcon_h = int(65 / settinglevel.dpi_ratio)
+        fullcon_position_x = int(1285 / settinglevel.dpi_ratio)
+        fullcon_position_y = int(80 / settinglevel.dpi_ratio)
+        self.full_con.geometry("%sx%s+%d+%d" % (fullcon_w, fullcon_h, window.full_w / 2- fullcon_position_x /2, window.full_h - fullcon_position_y))
         
         self.listbox_button2 = ttk.Button(self.full_con, text = "List", style='primary.TButton', command = listlevel.show_listbox, width=8)
         self.listbox_button2.pack(side =tk.LEFT, padx = 5)
@@ -6849,7 +6872,12 @@ class FullscreenGUI(WindowGUI):
         # Controller in photo album mode
         self.photo_con.resizable(False,False)
         self.photo_con.overrideredirect(1)
-        self.photo_con.geometry("1000x50+%d+%d" % (window.full_w / 2 - 1000/2, window.full_h - 64))
+        
+        photocon_w = int(1250 / settinglevel.dpi_ratio)
+        photocon_h = int(65 / settinglevel.dpi_ratio)
+        photocon_position_x = int(1250 / settinglevel.dpi_ratio)
+        photocon_position_y = int(80 / settinglevel.dpi_ratio)
+        self.photo_con.geometry("%sx%s+%d+%d" % (photocon_w, photocon_h, window.full_w / 2 - photocon_position_x/2, window.full_h - photocon_position_y))
         self.forward_speed = 1
         
         self.listbox_button3 = ttk.Button(self.photo_con, text = "List", style='primary.TButton', command = listlevel.show_listbox, width=8)
@@ -6905,12 +6933,15 @@ class FullscreenGUI(WindowGUI):
         self.mon_y = monitor_area[1]
         
         self.photo_preview_auto_adjust = True
-        self.photo_canva_w = 200
-        self.photo_canva_h = 200
+        
+        self.photo_canva_w = int(250 / settinglevel.dpi_ratio)
+        self.photo_canva_h = int(250 / settinglevel.dpi_ratio)
+        photocon_position_x = int(65 / settinglevel.dpi_ratio)
+        photocon_position_y = int(315 / settinglevel.dpi_ratio)
         self.photo_preview.resizable(False,False)
         self.photo_preview.overrideredirect(1)
         self.photo_preview.geometry('%dx%d' %(self.photo_canva_w, self.photo_canva_h))   
-        self.photo_preview.geometry("+%d+%d" % (50 + self.mon_x, window.full_h - 250 + self.mon_y))
+        self.photo_preview.geometry("+%d+%d" % (photocon_position_x + self.mon_x, window.full_h - photocon_position_y + self.mon_y))
         
         self.photo_canvas = tk.Canvas(self.photo_preview, width = self.photo_canva_w, height = self.photo_canva_h, highlightthickness = 0)
         self.photo_canvas.pack()
@@ -6928,7 +6959,12 @@ class FullscreenGUI(WindowGUI):
         # Controller in manga mode
         self.manga_con.resizable(False,False)
         self.manga_con.overrideredirect(1)
-        self.manga_con.geometry("890x50+%d+%d" % (window.full_w / 2- 890 /2, window.full_h - 64))
+        
+        photocon_w = int(1100 / settinglevel.dpi_ratio)
+        photocon_h = int(65 / settinglevel.dpi_ratio)
+        photocon_position_x = int(1100 / settinglevel.dpi_ratio)
+        photocon_position_y = int(80 / settinglevel.dpi_ratio)
+        self.manga_con.geometry("%sx%s+%d+%d" % (photocon_w, photocon_h, window.full_w / 2- photocon_position_x /2, window.full_h - photocon_position_y))
         
         self.listbox_button4 = ttk.Button(self.manga_con, text = "List", style='primary.TButton', command = listlevel.show_listbox, width=8)
         self.listbox_button4.pack(side =tk.LEFT, padx = 5)
@@ -6998,8 +7034,8 @@ class FullscreenGUI(WindowGUI):
         x0 = self.photo_preview.winfo_rootx()
         y0 = self.photo_preview.winfo_rooty()
         
-        fulllevel.photo_canva_w = max(100, x1-x0)
-        fulllevel.photo_canva_h = max(100, y1-y0)
+        fulllevel.photo_canva_w = max(int(125 / settinglevel.dpi_ratio), x1-x0)
+        fulllevel.photo_canva_h = max(int(125 / settinglevel.dpi_ratio), y1-y0)
         
         self.photo_preview.geometry("%sx%s" %(fulllevel.photo_canva_w, fulllevel.photo_canva_h)) # for resizing the window
         self.photo_canvas.configure(width = fulllevel.photo_canva_w, height = fulllevel.photo_canva_h)
@@ -7141,10 +7177,12 @@ class FullscreenGUI(WindowGUI):
         
         # reset photo preview
         self.photo_preview_auto_adjust = True
-        self.photo_canva_w = 200
-        self.photo_canva_h = 200
+        self.photo_canva_w = int(250 / settinglevel.dpi_ratio)
+        self.photo_canva_h = int(250 / settinglevel.dpi_ratio)
+        photo_canva_position_x = int(65 / settinglevel.dpi_ratio)
+        photo_canva_position_y = int(300 / settinglevel.dpi_ratio)
         self.photo_preview.geometry('%dx%d' %(self.photo_canva_w, self.photo_canva_h))  
-        self.photo_preview.geometry("+%d+%d" % (50 + self.mon_x, window.full_h - 250 + self.mon_y))
+        self.photo_preview.geometry("+%d+%d" % (photo_canva_position_x + self.mon_x, window.full_h - photo_canva_position_y + self.mon_y))
         
         try:
             settinglevel.setting_hide()
@@ -8530,7 +8568,10 @@ class ListboxGUI():
         
         self.parent.resizable(False,False)
         self.parent.overrideredirect(1)
-        self.parent.geometry('316x550+%d+%d' %(int(settinglevel.listbox_x), int(settinglevel.listbox_y)))    # re adjust list position
+        
+        parent_w = int(395 * settinglevel.dpi_ratio)   
+        parent_h = int(690 * settinglevel.dpi_ratio) 
+        self.parent.geometry('%sx%s+%d+%d' %(parent_w, parent_h, int(settinglevel.listbox_x), int(settinglevel.listbox_y)))    # re adjust list position
         
         self.button_frame = ttk.Frame(self.parent, style='Warning.TFrame')           
         self.button_frame.pack(pady=5, fill="y", side = tk.TOP)  
@@ -8588,11 +8629,13 @@ class ListboxGUI():
         self.listbox5.bind('<B1-Motion>', self.listbox_drag)
         
         # list Canva
-        self.list_canva_w = 200
-        self.list_canva_h = 160
+
+        list_canva_position_h = int(40 * settinglevel.dpi_ratio) 
+        self.list_canva_w = int(250 * settinglevel.dpi_ratio) 
+        self.list_canva_h = int(200 * settinglevel.dpi_ratio) 
         self.list_canva.resizable(False,False)
         self.list_canva.overrideredirect(1)
-        self.list_canva.geometry('%dx%d+0+0' %(self.list_canva_w, self.list_canva_h + 30))    
+        self.list_canva.geometry('%dx%d+0+0' %(self.list_canva_w, self.list_canva_h + list_canva_position_h))    
         
         self.top_frame = ttk.Frame(self.list_canva, style='Warning.TFrame')           
         self.top_frame.pack(pady=0, fill="y", side = tk.TOP)  
@@ -8770,8 +8813,10 @@ class ListboxGUI():
         
         else:
             canva_y = event.y
-            
-        self.list_canva.geometry('+{x}+{y}'.format(x=listbox_x + 300,y=canva_y + 100))
+
+        list_canva_postion_x = int(375 * settinglevel.dpi_ratio)   
+        list_canva_postion_y = int(125 * settinglevel.dpi_ratio) 
+        self.list_canva.geometry('+{x}+{y}'.format(x=listbox_x + list_canva_postion_x,y=canva_y + list_canva_postion_y))
         
         # Show IMG
         try:
@@ -9063,7 +9108,7 @@ class ListboxGUI():
 # In[Settings]
 class SettingGUI(WindowGUI):
     
-    def __init__(self, parent, ie, name):
+    def __init__(self, parent, ie, name, dpi_setting):
         print("class SettingGUI _init_")
         logging.info("class SettingGUI _init_")
         
@@ -9072,6 +9117,7 @@ class SettingGUI(WindowGUI):
         self.ie = ie
         self.is_settingcreated = False
         self.is_iecreated = False
+        self.dpi_setting = dpi_setting
         
         self.parent.withdraw()
         self.ie.withdraw()
@@ -9079,6 +9125,17 @@ class SettingGUI(WindowGUI):
     def import_settings(self):
         print("import_settings") 
         logging.info("import_settings")
+        
+        # DPI
+        if self.dpi_setting == 1:
+            self.dpi_ratio = 1
+        
+        else:
+            user32 = windll.user32
+            hwnd = user32.GetForegroundWindow()
+            dpi = user32.GetDpiForWindow(hwnd)
+            # print(dpi)
+            self.dpi_ratio = 96/dpi  # 96 dpi refers to 100% scaling in windows
         
         # Default Settings
         # window mode
@@ -9267,7 +9324,10 @@ class SettingGUI(WindowGUI):
         
         self.parent.resizable(False,False)
         self.parent.overrideredirect(1)
-        self.parent.geometry('350x760+%d+%d' %(int(self.setting_x), int(self.setting_y)))    # re adjust list position
+
+        parent_w = int(440 * settinglevel.dpi_ratio)   
+        parent_h = int(950 * settinglevel.dpi_ratio) 
+        self.parent.geometry('%sx%s+%d+%d' %(parent_w, parent_h, int(self.setting_x), int(self.setting_y)))    # re adjust list position
     
         self.setting_frame0 = tk.Frame(self.parent)             
         self.setting_frame0.pack(pady=0, side = tk.TOP, fill=tk.BOTH)
@@ -9771,7 +9831,9 @@ class SettingGUI(WindowGUI):
         
         self.ie.resizable(False,False)
         self.ie.overrideredirect(1)
-        self.ie.geometry('280x300+%d+%d' %(int(self.ie_x), int(self.ie_y)))
+        ie_w = int(350 * settinglevel.dpi_ratio)   
+        ie_h = int(375 * settinglevel.dpi_ratio) 
+        self.ie.geometry('%sx%s+%d+%d' %(ie_w, ie_h, int(self.ie_x), int(self.ie_y)))
     
         self.ie_frame0 = tk.Frame(self.ie)             
         self.ie_frame0.pack(pady=0, side = tk.TOP, fill=tk.BOTH)
@@ -10088,9 +10150,15 @@ def exception_unidentifiedimage():
 
 if __name__ == "__main__":
     # set winfo size to fit with screen size, but the running speed is much slower
+    # 0: DPI Unaware — The application does not adjust for DPI settings.
+    # 1: System DPI Aware — The application uses the system DPI setting.
+    # 2: Per Monitor DPI Aware — The application adjusts dynamically for DPI settings on each monitor.
     # SetProcessDpiAwareness(0) : 1536x864
     # SetProcessDpiAwareness(1) : 1920x1080
-    windll.shcore.SetProcessDpiAwareness(1) # your windows version should >= 8.1, otherwise it will raise exception.
+
+    SET_DPI = 1
+    
+    windll.shcore.SetProcessDpiAwareness(SET_DPI) # your windows version should >= 8.1, otherwise it will raise exception.
     
     logging_create()
     
@@ -10114,7 +10182,7 @@ if __name__ == "__main__":
 
     setting = tk.Toplevel(window.parent)
     ie = tk.Toplevel(window.parent)
-    settinglevel = SettingGUI(setting, ie, "settinglevel")
+    settinglevel = SettingGUI(setting, ie, "settinglevel", SET_DPI)
     settinglevel.import_settings()
     
     try:
