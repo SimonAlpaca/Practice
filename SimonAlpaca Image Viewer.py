@@ -1477,7 +1477,8 @@ class WindowGUI(tk.Frame):
         
         self.is_stop_ani = True
         self.pic_canvas.delete("all")
-        
+        listlevel.pic_canvas.delete("all")
+        listlevel.list_canva.withdraw()
         self.folder_entry.delete(0, "end")
             
         self.fullfilelist = []
@@ -9108,7 +9109,7 @@ class ListboxGUI():
 # In[Settings]
 class SettingGUI(WindowGUI):
     
-    def __init__(self, parent, ie, name, dpi_setting):
+    def __init__(self, parent, ie, name):
         print("class SettingGUI _init_")
         logging.info("class SettingGUI _init_")
         
@@ -9117,7 +9118,6 @@ class SettingGUI(WindowGUI):
         self.ie = ie
         self.is_settingcreated = False
         self.is_iecreated = False
-        self.dpi_setting = dpi_setting
         
         self.parent.withdraw()
         self.ie.withdraw()
@@ -9126,19 +9126,10 @@ class SettingGUI(WindowGUI):
         print("import_settings") 
         logging.info("import_settings")
         
-        # DPI
-        if self.dpi_setting == 1:
-            self.dpi_ratio = 1
-        
-        else:
-            user32 = windll.user32
-            hwnd = user32.GetForegroundWindow()
-            dpi = user32.GetDpiForWindow(hwnd)
-            # print(dpi)
-            self.dpi_ratio = 96/dpi  # 96 dpi refers to 100% scaling in windows
-        
         # Default Settings
         # window mode
+        self.setting_dpistr = "Windows"
+        
         self.window_width = 800
         self.window_height = 600
         self.window_x = 300
@@ -9221,6 +9212,7 @@ class SettingGUI(WindowGUI):
         self.auto_frame = 60                                # frame of auto manga
         self.auto_dis = 200                                 # distance of auto per second 
         
+        self.setting_dpistr = "Windows"
         self.setting_gifspeedstr = "Normal"
         self.setting_scrollstr = "Normal"
         self.setting_imagesizestr = "Fullscreen"
@@ -9258,6 +9250,7 @@ class SettingGUI(WindowGUI):
         self.manga_resize = float(self.getconfig("manga_resize", self.manga_resize))
         self.auto_dis = int(self.getconfig("auto_dis", self.auto_dis))
         self.setting_gifspeedstr = str(self.getconfig("setting_gifspeedstr", self.setting_gifspeedstr))
+        self.setting_dpistr = str(self.getconfig("setting_dpistr", self.setting_dpistr))
         self.setting_scrollstr = str(self.getconfig("setting_scrollstr", self.setting_scrollstr))
         self.setting_imagesizestr = str(self.getconfig("setting_imagesizestr", self.setting_imagesizestr))
         self.setting_autospeedstr = str(self.getconfig("setting_autospeedstr", self.setting_autospeedstr))
@@ -9282,7 +9275,35 @@ class SettingGUI(WindowGUI):
         self.pre_original = self.is_original
         self.pre_storage = self.is_storage
         self.pre_manga_resize = self.manga_resize
-    
+        
+        # DPI
+        
+        # set winfo size to fit with screen size, but the running speed is much slower
+        # 0: DPI Unaware — The application does not adjust for DPI settings.
+        # 1: System DPI Aware — The application uses the system DPI setting.
+        # 2: Per Monitor DPI Aware — The application adjusts dynamically for DPI settings on each monitor.
+        # SetProcessDpiAwareness(0) : 1536x864
+        # SetProcessDpiAwareness(1) : 1920x1080
+        
+        if self.setting_dpistr == "100 Percent":
+            set_DPI = 1
+        
+        else:
+            set_DPI = 0
+        
+        windll.shcore.SetProcessDpiAwareness(set_DPI) # your windows version should >= 8.1, otherwise it will raise exception.
+      
+        # DPI
+        if set_DPI == 1:
+            self.dpi_ratio = 1
+        
+        else:
+            user32 = windll.user32
+            hwnd = user32.GetForegroundWindow()
+            dpi = user32.GetDpiForWindow(hwnd)
+            # print(dpi)
+            self.dpi_ratio = 96/dpi  # 96 dpi refers to 100% scaling in windows    
+            
     def setting_buttonclick(self):
         print("setting_buttonclick")
         logging.info("setting_buttonclick")
@@ -9326,7 +9347,7 @@ class SettingGUI(WindowGUI):
         self.parent.overrideredirect(1)
 
         parent_w = int(440 * settinglevel.dpi_ratio)   
-        parent_h = int(950 * settinglevel.dpi_ratio) 
+        parent_h = int(1000 * settinglevel.dpi_ratio) 
         self.parent.geometry('%sx%s+%d+%d' %(parent_w, parent_h, int(self.setting_x), int(self.setting_y)))    # re adjust list position
     
         self.setting_frame0 = tk.Frame(self.parent)             
@@ -9349,6 +9370,9 @@ class SettingGUI(WindowGUI):
         
         self.setting_frame6 = tk.Frame(self.parent)             
         self.setting_frame6.pack(pady=0, side = tk.TOP, fill=tk.BOTH)
+        
+        self.setting_frame7 = tk.Frame(self.parent)             
+        self.setting_frame7.pack(pady=0, side = tk.TOP, fill=tk.BOTH)
         
         self.setting_frame00 = tk.Frame(self.parent, background='gray25')             
         self.setting_frame00.pack(pady=10, side = tk.TOP, fill=tk.BOTH)
@@ -9416,6 +9440,9 @@ class SettingGUI(WindowGUI):
         self.setting_label6 = ttk.Label(self.setting_frame6, text = "      Skip GIF Frame For Actual Speed : " , style='fg.TLabel')
         self.setting_label6.pack(pady=5, side= tk.LEFT)
         
+        self.setting_label7 = ttk.Label(self.setting_frame7, text = "      DPI Scaling : " , style='fg.TLabel')
+        self.setting_label7.pack(pady=5, side= tk.LEFT)
+        
         self.setting_label00 = ttk.Label(self.setting_frame00, text = "  Auto Cache : " ,style='fg.TLabel', background='gray25')
         self.setting_label00.pack(pady=0, side= tk.LEFT)
         
@@ -9481,6 +9508,12 @@ class SettingGUI(WindowGUI):
         self.setting_scroll4 = tk.OptionMenu(self.setting_frame4, self.setting_gifspeed, "Very Fast", "Fast", "Normal", "Slow", "Very Slow")
         self.setting_scroll4["highlightthickness"] = 0                  # remove the option boundary
         self.setting_scroll4.pack(pady=0, padx = 10, side= tk.RIGHT)
+        
+        self.setting_dpi = tk.StringVar()
+        self.setting_dpi.set(self.setting_dpistr)
+        self.setting_scroll7 = tk.OptionMenu(self.setting_frame7, self.setting_dpi, "Windows", "100 Percent")
+        self.setting_scroll7["highlightthickness"] = 0                  # remove the option boundary
+        self.setting_scroll7.pack(pady=0, padx = 10, side= tk.RIGHT)
         
         self.setting_entry11 = tk.Entry(self.setting_frame11, width=5, background='gray25')
         self.setting_entry11.insert(1, self.default_timer)
@@ -9552,6 +9585,7 @@ class SettingGUI(WindowGUI):
         self.is_natsort = self.natsort_check.get()
         self.random_gifspeed = self.randomgifspeed_check.get()
         self.is_skipframespeed = self.skipframespeed_check.get()
+        self.setting_dpistr = self.setting_dpi.get()
         
         # auto cache
         self.is_storage = self.storage_check.get()
@@ -9699,6 +9733,7 @@ class SettingGUI(WindowGUI):
             self.config.set("ImageViewer", "setting_scrollstr", self.setting_scrollstr)
             self.config.set("ImageViewer", "scroll_multiplier", str(self.scroll_multiplier))
             self.config.set("ImageViewer", "setting_gifspeedstr", self.setting_gifspeedstr)
+            self.config.set("ImageViewer", "setting_dpistr", str(self.setting_dpistr))
             self.config.set("ImageViewer", "setting_imagesizestr", self.setting_imagesizestr)
             self.config.set("ImageViewer", "manga_resize", str(self.manga_resize))
             self.config.set("ImageViewer", "setting_autospeedstr", self.setting_autospeedstr)
@@ -10149,17 +10184,7 @@ def exception_unidentifiedimage():
 # In[Initial]
 
 if __name__ == "__main__":
-    # set winfo size to fit with screen size, but the running speed is much slower
-    # 0: DPI Unaware — The application does not adjust for DPI settings.
-    # 1: System DPI Aware — The application uses the system DPI setting.
-    # 2: Per Monitor DPI Aware — The application adjusts dynamically for DPI settings on each monitor.
-    # SetProcessDpiAwareness(0) : 1536x864
-    # SetProcessDpiAwareness(1) : 1920x1080
-
-    SET_DPI = 1
-    
-    windll.shcore.SetProcessDpiAwareness(SET_DPI) # your windows version should >= 8.1, otherwise it will raise exception.
-    
+  
     logging_create()
     
     default_recursion_limit = sys.getrecursionlimit()
@@ -10182,7 +10207,7 @@ if __name__ == "__main__":
 
     setting = tk.Toplevel(window.parent)
     ie = tk.Toplevel(window.parent)
-    settinglevel = SettingGUI(setting, ie, "settinglevel", SET_DPI)
+    settinglevel = SettingGUI(setting, ie, "settinglevel")
     settinglevel.import_settings()
     
     try:
