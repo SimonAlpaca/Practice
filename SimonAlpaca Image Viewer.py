@@ -6450,12 +6450,25 @@ class WindowGUI(tk.Frame):
             window.event_zoom_ongoing = True
             x = self.pic_canvas.canvasx(event.x)
             y = self.pic_canvas.canvasy(event.y)
+            
+            if window.zoom_factor > 1:
+                zoom_change = 0.2
+            
+            elif window.zoom_factor == 1:
+                if event.delta > 1:
+                    zoom_change = 0.2
+                    
+                else:
+                    zoom_change = 0.1
+            
+            else:
+                zoom_change = 0.1
                 
             if event.delta > 1:                           # scroll up
-                window.zoom_factor = window.zoom_factor + 0.1
+                window.zoom_factor = round(window.zoom_factor + zoom_change , 2)
             
             else:                                         # scroll down
-                window.zoom_factor = max(window.zoom_factor - 0.1, 0.5)
+                window.zoom_factor = round(max(window.zoom_factor - zoom_change, 0.4) , 2)
             
             filepath = str(window.folder_entry.get())
             file_ext = os.path.splitext(filepath)[1].lower()
