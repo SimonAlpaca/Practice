@@ -1123,6 +1123,7 @@ class WindowGUI(tk.Frame):
         self.apply_to_all = False
         self.allow_event_focusin = True
         self.first_format = False
+        self.pre_timer_pause = True
         
         # Supported format
         self.supported_img = [".jpg", ".jpeg", ".png", ".bmp", ".jfif", ".ico"]
@@ -4905,7 +4906,7 @@ class WindowGUI(tk.Frame):
         logging.info("ShowIMG_ImageEnhance")
         
         window.next_enhance = True
-        pre_timer_pause = True
+        window.pre_timer_pause = True
         
         # only support img
         filepath = window.fullfilelist[window.fileindex]
@@ -4969,7 +4970,7 @@ class WindowGUI(tk.Frame):
             elif window.is_photoalbum_mode:                                    # photo album mode
                 
                 if not window.is_timer_pause:                # pause photoalbum move to avoid wrong timer calculation
-                    pre_timer_pause = False
+                    window.pre_timer_pause = False
                     window.is_timer_pause = True
                 
                 fulllevel.pic_canvas.image = ImageTk.PhotoImage(image = image_IE)
@@ -4990,7 +4991,7 @@ class WindowGUI(tk.Frame):
                 
                 fulllevel.popup.update()
                 
-                if not pre_timer_pause:                      # resume photoalbum move if paused previously
+                if not window.pre_timer_pause:                      # resume photoalbum move if paused previously
                     window.is_timer_pause = False
                 
                 if not initial:
