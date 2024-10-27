@@ -13,12 +13,30 @@ INFO:root:hide_listbox
 INFO:root:fullscreen_create
 INFO:root:event_focusin
 INFO:root:show_appwindow
+INFO:root:drag_window
+INFO:root:drag_release
 INFO:root:event_focusin
+INFO:root:event_focusin
+INFO:root:event_focusin
+WARNING:root:Empty file path
+INFO:root:Traceback (most recent call last):
+
+INFO:root:  File "C:\ProgramData\Anaconda3\lib\tkinter\__init__.py", line 1892, in __call__
+    return self.func(*args)
+
+INFO:root:  File "C:\Users\simon\Practice\SimonAlpaca Image Viewer.py", line 6665, in enter_full
+    exception_emptypath()
+
+INFO:root:  File "C:\Users\simon\Practice\SimonAlpaca Image Viewer.py", line 10118, in exception_emptypath
+    raise FileNotFoundError("Empty file path")
+
+INFO:root:FileNotFoundError: Empty file path
+
 INFO:root:event_focusin
 INFO:root:go
 INFO:root:generate_list
 INFO:root:append_filelist
-INFO:root:Import 32 items
+INFO:root:Import 329 items
 INFO:root:dataframe_create
 INFO:root:clear_all_cache
 INFO:root:dataframe_create_filter: start
@@ -28,187 +46,517 @@ INFO:root:Cache Cleared All: window
 INFO:root:garbage collected: 0
 INFO:root:Cache Cleared All: fulllevel
 INFO:root:garbage collected: 0
-INFO:root:dataframe_create_filter: done
 INFO:root:start backend_storage: window
 INFO:root:ShowIMG
 INFO:root:storage size : 0
 INFO:root:Cached: window - 0
 INFO:root:Cached: window - 0
-INFO:root:storage size : 0.09
+INFO:root:storage size : 0.06
 INFO:root:Cached: window - 1
-INFO:root:storage size : 0.17
+INFO:root:storage size : 0.13
+INFO:root:dataframe_create_filter: done
 INFO:root:Cached: window - 2
-INFO:root:storage size : 0.26
+INFO:root:storage size : 0.19
 INFO:root:Cached: window - 3
-INFO:root:storage size : 0.36
+INFO:root:storage size : 0.26
 INFO:root:Cached: window - 4
-INFO:root:storage size : 0.45
+INFO:root:storage size : 0.32
 INFO:root:Cached: window - 5
-INFO:root:storage size : 0.54
+INFO:root:storage size : 0.39
 INFO:root:Cached: window - 6
-INFO:root:storage size : 0.62
+INFO:root:storage size : 0.45
 INFO:root:Cached: window - 7
-INFO:root:storage size : 0.71
+INFO:root:storage size : 0.52
 INFO:root:Cached: window - 8
-INFO:root:storage size : 0.81
+INFO:root:storage size : 0.58
 INFO:root:Cached: window - 9
-INFO:root:storage size : 0.9
+INFO:root:storage size : 0.65
 INFO:root:Cached: window - 10
-INFO:root:storage size : 0.99
+INFO:root:storage size : 0.71
 INFO:root:Cached: window - 11
-INFO:root:storage size : 1.08
+INFO:root:storage size : 0.78
 INFO:root:Cached: window - 12
-INFO:root:storage size : 1.27
+INFO:root:storage size : 0.84
 INFO:root:Cached: window - 13
-INFO:root:storage size : 1.36
+INFO:root:storage size : 1.27
 INFO:root:Cached: window - 14
-INFO:root:storage size : 1.45
+INFO:root:storage size : 1.7
 INFO:root:Cached: window - 15
-INFO:root:storage size : 1.55
-INFO:root:Cached: window - 16
-INFO:root:storage size : 1.64
-INFO:root:Cached: window - 17
-INFO:root:storage size : 1.73
-INFO:root:Cached: window - 18
-INFO:root:storage size : 1.83
-INFO:root:Cached: window - 19
-INFO:root:storage size : 1.92
-INFO:root:Cached: window - 20
-INFO:root:storage size : 2.01
-INFO:root:Cached: window - 21
-INFO:root:storage size : 2.1
-INFO:root:Cached: window - 22
-INFO:root:storage size : 2.2
-INFO:root:Cached: window - 23
-INFO:root:storage size : 2.29
-INFO:root:Cached: window - 24
-INFO:root:storage size : 2.38
-INFO:root:Cached: window - 25
-INFO:root:storage size : 2.47
-INFO:root:Cached: window - 26
-INFO:root:storage size : 2.57
-INFO:root:Cached: window - 27
-INFO:root:storage size : 2.66
-INFO:root:Cached: window - 28
-INFO:root:storage size : 2.75
-INFO:root:Cached: window - 29
-INFO:root:storage size : 2.84
-INFO:root:Cached: window - 30
-INFO:root:storage size : 3.01
-INFO:root:Cached: window - 31
-INFO:root:storage size : 3.18
-INFO:root:Auto storage done: window
+INFO:root:storage size : 2.13
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:Auto storage stopped: window
+INFO:root:storage size : 2.13
+INFO:root:Auto storage stopped: window
+INFO:root:thread stopped
+INFO:root:start backend_storage: fulllevel
+INFO:root:ShowIMG_Full
+INFO:root:storage size : 2.13
+INFO:root:Cached: fulllevel - 0
 INFO:root:event_focusin
+INFO:root:Cached: fulllevel - 0
+INFO:root:storage size : 2.56
+INFO:root:Cached: fulllevel - 1
+INFO:root:storage size : 2.99
+INFO:root:Cached: fulllevel - 2
+INFO:root:storage size : 3.41
+INFO:root:Cached: fulllevel - 3
+INFO:root:storage size : 3.84
+INFO:root:Cached: fulllevel - 4
+INFO:root:storage size : 4.27
+INFO:root:Cached: fulllevel - 5
+INFO:root:storage size : 4.7
+INFO:root:Cached: fulllevel - 6
+INFO:root:storage size : 5.13
+INFO:root:Cached: fulllevel - 7
+INFO:root:storage size : 5.56
+INFO:root:Cached: fulllevel - 8
+INFO:root:storage size : 5.99
+INFO:root:Cached: fulllevel - 9
+INFO:root:storage size : 6.41
+INFO:root:Cached: fulllevel - 10
+INFO:root:storage size : 6.84
+INFO:root:Cached: fulllevel - 11
+INFO:root:storage size : 7.27
+INFO:root:Cached: fulllevel - 12
+INFO:root:storage size : 7.7
+INFO:root:Cached: fulllevel - 13
+INFO:root:storage size : 8.13
+INFO:root:Cached: fulllevel - 14
+INFO:root:storage size : 8.56
+INFO:root:Cached: fulllevel - 15
+INFO:root:storage size : 8.99
+INFO:root:Cached: fulllevel - 16
+INFO:root:storage size : 9.41
+INFO:root:Cached: fulllevel - 17
+INFO:root:storage size : 9.84
+INFO:root:Cached: fulllevel - 18
+INFO:root:storage size : 10.27
+INFO:root:Cached: fulllevel - 19
+INFO:root:storage size : 10.7
+INFO:root:Cached: fulllevel - 20
+INFO:root:storage size : 11.13
+INFO:root:Cached: fulllevel - 21
+INFO:root:storage size : 11.56
+INFO:root:Cached: fulllevel - 22
+INFO:root:storage size : 11.99
+INFO:root:Cached: fulllevel - 23
+INFO:root:storage size : 12.41
+INFO:root:Cached: fulllevel - 24
+INFO:root:storage size : 12.84
+INFO:root:Cached: fulllevel - 25
+INFO:root:storage size : 13.27
+INFO:root:Cached: fulllevel - 26
+INFO:root:storage size : 13.7
+INFO:root:Cached: fulllevel - 27
+INFO:root:storage size : 14.13
+INFO:root:Cached: fulllevel - 28
+INFO:root:storage size : 14.56
+INFO:root:Cached: fulllevel - 29
+INFO:root:storage size : 14.99
+INFO:root:Cached: fulllevel - 30
+INFO:root:storage size : 15.41
+INFO:root:Cached: fulllevel - 31
+INFO:root:storage size : 15.84
+INFO:root:Cached: fulllevel - 32
+INFO:root:storage size : 16.27
+INFO:root:Cached: fulllevel - 33
+INFO:root:storage size : 16.7
+INFO:root:Cached: fulllevel - 34
+INFO:root:storage size : 17.13
+INFO:root:Cached: fulllevel - 35
+INFO:root:storage size : 17.56
+INFO:root:Cached: fulllevel - 36
+INFO:root:storage size : 17.99
+INFO:root:Cached: fulllevel - 37
+INFO:root:storage size : 18.41
+INFO:root:Cached: fulllevel - 38
+INFO:root:storage size : 18.84
+INFO:root:Cached: fulllevel - 39
+INFO:root:storage size : 19.27
+INFO:root:Cached: fulllevel - 40
+INFO:root:storage size : 19.7
+INFO:root:Auto storage done: fulllevel
+INFO:root:event_focusin
+INFO:root:event_focusin
+INFO:root:event_focusin
+INFO:root:event_focusin
+INFO:root:start_photoalbum
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:class Storage _init_: photoalbum 
+INFO:root:event_focusin
+INFO:root:start backend_preview_storage: photoalbum
+INFO:root:start_slide
+INFO:root:start backend_storage: photoalbum
+INFO:root:ShowIMG_FullPhotoalbum - initial: True
+INFO:root:Cached: photoalbum - 0
+INFO:root:Preview Cached: photoalbum - 1
+INFO:root:Preview Cached: photoalbum - 2
+INFO:root:storage size : 22.03
+INFO:root:Cached: photoalbum - 0
+INFO:root:Preview Cached: photoalbum - 3
+INFO:root:storage size : 22.03
+INFO:root:Preview Cached: photoalbum - 4
+INFO:root:ShowIMG_FullPhotoalbum - initial: False
+INFO:root:Preview Cached: photoalbum - 5
+INFO:root:Cached: photoalbum - 1
+INFO:root:Preview Cached: photoalbum - 6
+INFO:root:storage size : 24.37
+INFO:root:Cached: photoalbum - 0
+INFO:root:Preview Cached: photoalbum - 7
+INFO:root:Preview Cached: photoalbum - 8
+INFO:root:storage size : 24.37
+INFO:root:Preview Cached: photoalbum - 9
+INFO:root:Cached: photoalbum - 2
+INFO:root:storage size : 26.7
+INFO:root:ShowIMG_Preview
+INFO:root:Preview Cached: photoalbum - 10
+INFO:root:Cached: photoalbum - 3
+INFO:root:storage size : 29.03
+INFO:root:Preview Cached: photoalbum - 11
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 4
+INFO:root:Preview Cached: photoalbum - 12
+INFO:root:storage size : 31.37
+INFO:root:Preview Cached: photoalbum - 13
+INFO:root:Cached: photoalbum - 5
+INFO:root:storage size : 33.7
+INFO:root:Preview Cached: photoalbum - 14
+INFO:root:Cached: photoalbum - 6
+INFO:root:storage size : 36.03
+INFO:root:Preview Cached: photoalbum - 15
+INFO:root:Cached: photoalbum - 7
+INFO:root:storage size : 38.37
+INFO:root:Preview Cached: photoalbum - 16
+INFO:root:Cached: photoalbum - 8
+INFO:root:storage size : 40.7
+INFO:root:Preview Cached: photoalbum - 17
+INFO:root:Cached: photoalbum - 9
+INFO:root:Preview Cached: photoalbum - 18
+INFO:root:storage size : 43.03
+INFO:root:Preview Cached: photoalbum - 19
+INFO:root:Cached: photoalbum - 10
+INFO:root:storage size : 45.37
+INFO:root:Preview Cached: photoalbum - 20
+INFO:root:Cached: photoalbum - 11
+INFO:root:storage size : 47.7
+INFO:root:Preview Cached: photoalbum - 21
+INFO:root:Cached: photoalbum - 12
+INFO:root:Preview Cached: photoalbum - 22
+INFO:root:storage size : 50.03
+INFO:root:Preview Cached: photoalbum - 23
+INFO:root:Cached: photoalbum - 13
+INFO:root:storage size : 52.37
+INFO:root:Preview Cached: photoalbum - 24
+INFO:root:Cached: photoalbum - 14
+INFO:root:storage size : 54.7
+INFO:root:Preview Cached: photoalbum - 25
+INFO:root:Cached: photoalbum - 15
+INFO:root:storage size : 57.03
+INFO:root:Preview Cached: photoalbum - 26
+INFO:root:event_focusin
+INFO:root:Cached: photoalbum - 16
+INFO:root:storage size : 59.37
+INFO:root:Preview Cached: photoalbum - 27
+INFO:root:Cached: photoalbum - 17
+INFO:root:storage size : 61.7
+INFO:root:Preview Cached: photoalbum - 28
+INFO:root:Cached: photoalbum - 18
+INFO:root:storage size : 64.03
+INFO:root:Preview Cached: photoalbum - 29
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 19
+INFO:root:Preview Cached: photoalbum - 30
+INFO:root:storage size : 66.37
+INFO:root:ShowIMG_Preview
+INFO:root:Preview Cached: photoalbum - 31
+INFO:root:Cached: photoalbum - 20
+INFO:root:storage size : 68.7
+INFO:root:Preview Cached: photoalbum - 32
+INFO:root:Cached: photoalbum - 21
+INFO:root:storage size : 71.03
+INFO:root:Preview Cached: photoalbum - 33
+INFO:root:Preview Cached: photoalbum - 34
+INFO:root:Cached: photoalbum - 22
+INFO:root:ShowIMG_Preview
+INFO:root:Preview Cached: photoalbum - 35
+INFO:root:storage size : 73.37
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 23
+INFO:root:Preview Cached: photoalbum - 36
+INFO:root:storage size : 75.7
+INFO:root:Preview Cached: photoalbum - 37
+INFO:root:Cached: photoalbum - 24
+INFO:root:storage size : 78.03
+INFO:root:Preview Cached: photoalbum - 38
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 25
+INFO:root:Preview Cached: photoalbum - 39
+INFO:root:storage size : 80.37
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 26
+INFO:root:Preview Cached: photoalbum - 40
+INFO:root:storage size : 82.7
+INFO:root:ShowIMG_Preview
+INFO:root:Preview Cached: photoalbum - 41
+INFO:root:Auto Preview storage done: photoalbum
+INFO:root:Cached: photoalbum - 27
+INFO:root:storage size : 85.03
+INFO:root:Cached: photoalbum - 28
+INFO:root:storage size : 87.37
+INFO:root:Cached: photoalbum - 29
+INFO:root:storage size : 89.7
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 30
+INFO:root:storage size : 92.03
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: photoalbum - 31
+INFO:root:storage size : 94.37
+INFO:root:Cached: photoalbum - 32
+INFO:root:storage size : 96.7
+INFO:root:Cached: photoalbum - 33
+INFO:root:event_focusin
+INFO:root:storage size : 99.03
+INFO:root:Cached: photoalbum - 34
+INFO:root:storage size : 101.37
+INFO:root:Cached: photoalbum - 35
+INFO:root:storage size : 103.7
+INFO:root:Cached: photoalbum - 36
+INFO:root:storage size : 106.03
+INFO:root:Cached: photoalbum - 37
+INFO:root:storage size : 108.37
+INFO:root:Cached: photoalbum - 38
+INFO:root:storage size : 110.7
+INFO:root:Cached: photoalbum - 39
+INFO:root:storage size : 113.03
+INFO:root:Cached: photoalbum - 40
+INFO:root:storage size : 115.37
+INFO:root:Auto storage done: photoalbum
+INFO:root:ShowIMG_Preview
+INFO:root:quit_photoalbum
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:quit_slide
+INFO:root:back_simple_full
+INFO:root:failed to unbind s
+INFO:root:ShowIMG_Full
+INFO:root:storage size : 115.37
+INFO:root:Cached: fulllevel - 0
+INFO:root:Cache Cleared All: photoalbum
+INFO:root:garbage collected: 0
+INFO:root:start_manga
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:class Storage _init_: manga 
+INFO:root:event_focusin
+INFO:root:start backend_storage: manga
+INFO:root:start backend_preview_storage: manga
+INFO:root:show_manga_top
+INFO:root:Cached: manga - 0
+INFO:root:Preview Cached: manga - 1
+INFO:root:Preview Cached: manga - 2
+INFO:root:Preview Cached: manga - 3
+INFO:root:Preview Cached: manga - 4
+INFO:root:Preview Cached: manga - 5
+INFO:root:Add: ['manga_328']
+INFO:root:show_manga_mid
+INFO:root:Preview Cached: manga - 6
+INFO:root:Preview Cached: manga - 7
+INFO:root:Preview Cached: manga - 8
+INFO:root:Preview Cached: manga - 9
+INFO:root:Add: ['manga_0']
+INFO:root:show_manga_bot
+INFO:root:Preview Cached: manga - 10
+INFO:root:Preview Cached: manga - 11
+INFO:root:Preview Cached: manga - 12
+INFO:root:Preview Cached: manga - 13
+INFO:root:Preview Cached: manga - 14
+INFO:root:Add: ['manga_1']
+INFO:root:storage size : 22.03
+INFO:root:Preview Cached: manga - 15
+INFO:root:Cached: manga - 1
+INFO:root:storage size : 24.37
+INFO:root:Preview Cached: manga - 16
+INFO:root:Cached: manga - 2
+INFO:root:storage size : 26.7
+INFO:root:Preview Cached: manga - 17
+INFO:root:Cached: manga - 3
+INFO:root:storage size : 29.03
+INFO:root:Cached: manga - 4
+INFO:root:storage size : 31.37
+INFO:root:Preview Cached: manga - 18
+INFO:root:Cached: manga - 5
+INFO:root:storage size : 33.7
+INFO:root:Preview Cached: manga - 19
+INFO:root:Cached: manga - 6
+INFO:root:storage size : 36.03
+INFO:root:Preview Cached: manga - 20
+INFO:root:Cached: manga - 7
+INFO:root:storage size : 38.37
+INFO:root:ShowIMG_Preview
+INFO:root:Preview Cached: manga - 21
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: manga - 8
+INFO:root:storage size : 40.7
+INFO:root:ShowIMG_Preview
+INFO:root:Cached: manga - 9
+INFO:root:storage size : 43.03
+INFO:root:Cached: manga - 10
+INFO:root:storage size : 45.37
+INFO:root:Preview Cached: manga - 22
+INFO:root:Cached: manga - 11
+INFO:root:storage size : 47.7
+INFO:root:Cached: manga - 12
+INFO:root:storage size : 50.03
+INFO:root:Cached: manga - 13
+INFO:root:storage size : 52.37
+INFO:root:Cached: manga - 14
+INFO:root:storage size : 54.7
+INFO:root:Cached: manga - 15
+INFO:root:storage size : 57.03
+INFO:root:Preview Cached: manga - 23
+INFO:root:Cached: manga - 16
+INFO:root:storage size : 59.37
+INFO:root:Preview Cached: manga - 24
+INFO:root:Cached: manga - 17
+INFO:root:storage size : 61.7
+INFO:root:Preview Cached: manga - 25
+INFO:root:Cached: manga - 18
+INFO:root:storage size : 64.03
+INFO:root:Preview Cached: manga - 26
+INFO:root:Cached: manga - 19
+INFO:root:storage size : 66.37
+INFO:root:Preview Cached: manga - 27
+INFO:root:Cached: manga - 20
+INFO:root:storage size : 68.7
+INFO:root:Preview Cached: manga - 28
+INFO:root:Cached: manga - 21
+INFO:root:storage size : 71.03
+INFO:root:Preview Cached: manga - 29
+INFO:root:Cached: manga - 22
+INFO:root:storage size : 73.37
+INFO:root:Preview Cached: manga - 30
+INFO:root:Cached: manga - 23
+INFO:root:storage size : 75.7
+INFO:root:Preview Cached: manga - 31
+INFO:root:Cached: manga - 24
+INFO:root:storage size : 78.03
+INFO:root:Preview Cached: manga - 32
+INFO:root:Cached: manga - 25
+INFO:root:storage size : 80.37
+INFO:root:Preview Cached: manga - 33
+INFO:root:Cached: manga - 26
+INFO:root:storage size : 82.7
+INFO:root:event_focusin
+INFO:root:Preview Cached: manga - 34
+INFO:root:Cached: manga - 27
+INFO:root:storage size : 85.03
+INFO:root:Preview Cached: manga - 35
+INFO:root:Cached: manga - 28
+INFO:root:storage size : 87.37
+INFO:root:Preview Cached: manga - 36
+INFO:root:Cached: manga - 29
+INFO:root:storage size : 89.7
+INFO:root:Preview Cached: manga - 37
+INFO:root:Cached: manga - 30
+INFO:root:storage size : 92.03
+INFO:root:Preview Cached: manga - 38
+INFO:root:Cached: manga - 31
+INFO:root:storage size : 94.37
+INFO:root:quit_manga
+INFO:root:Auto storage stopped: manga
+INFO:root:storage size : 94.37
+INFO:root:Auto storage stopped: manga
+INFO:root:Preview Cached: manga - 39
+INFO:root:Auto Preview storage stopped: manga
+INFO:root:thread stopped
+INFO:root:Cache Cleared All: manga
+INFO:root:garbage collected: 0
+INFO:root:garbage collected: 0
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:back_simple_full
+INFO:root:failed to unbind s
+INFO:root:ShowIMG_Full
+INFO:root:storage size : 19.7
+INFO:root:Cached: fulllevel - 0
+INFO:root:quit_full
+INFO:root:setting_hide
+INFO:root:enhancer_hide
+INFO:root:ShowIMG
+INFO:root:start backend_storage: window
+INFO:root:event_focusin
+INFO:root:storage size : 19.7
+INFO:root:Cached: window - 0
+INFO:root:Cached: window - 16
+INFO:root:storage size : 19.76
+INFO:root:Cached: window - 17
+INFO:root:storage size : 19.83
+INFO:root:Cached: window - 18
+INFO:root:storage size : 19.89
+INFO:root:Cached: window - 19
+INFO:root:storage size : 19.96
+INFO:root:Cached: window - 20
+INFO:root:storage size : 20.02
+INFO:root:Cached: window - 21
+INFO:root:storage size : 20.09
+INFO:root:Cached: window - 22
+INFO:root:storage size : 20.15
+INFO:root:Cached: window - 23
+INFO:root:storage size : 20.22
+INFO:root:Cached: window - 24
+INFO:root:storage size : 20.28
+INFO:root:Cached: window - 25
+INFO:root:storage size : 20.35
+INFO:root:Cached: window - 26
+INFO:root:storage size : 20.41
+INFO:root:Cached: window - 27
+INFO:root:storage size : 20.48
+INFO:root:Cached: window - 28
+INFO:root:storage size : 20.54
+INFO:root:Cached: window - 29
+INFO:root:storage size : 20.61
+INFO:root:Cached: window - 30
+INFO:root:storage size : 20.67
+INFO:root:Cached: window - 31
+INFO:root:storage size : 20.74
+INFO:root:Cached: window - 32
+INFO:root:storage size : 20.8
+INFO:root:Cached: window - 33
+INFO:root:storage size : 20.87
+INFO:root:Cached: window - 34
+INFO:root:storage size : 20.93
+INFO:root:Cached: window - 35
+INFO:root:storage size : 21.0
+INFO:root:Cached: window - 36
+INFO:root:storage size : 21.06
+INFO:root:Cached: window - 37
+INFO:root:storage size : 21.13
+INFO:root:Cached: window - 38
+INFO:root:storage size : 21.19
+INFO:root:Cached: window - 39
+INFO:root:storage size : 21.26
+INFO:root:Cached: window - 40
+INFO:root:storage size : 21.32
+INFO:root:Auto storage done: window
 INFO:root:setting_hide
 INFO:root:enhancer_hide
 INFO:root:start backend_storage: fulllevel
 INFO:root:ShowIMG_Full
-INFO:root:storage size : 3.18
-INFO:root:Cached: fulllevel - 0
-INFO:root:Cached: fulllevel - 0
-INFO:root:storage size : 3.57
-INFO:root:Cached: fulllevel - 1
-INFO:root:storage size : 3.9
-INFO:root:Cached: fulllevel - 2
-INFO:root:storage size : 4.29
-INFO:root:Cached: fulllevel - 3
-INFO:root:storage size : 4.69
-INFO:root:Cached: fulllevel - 4
-INFO:root:storage size : 5.08
-INFO:root:Cached: fulllevel - 5
-INFO:root:storage size : 5.47
-INFO:root:Cached: fulllevel - 6
-INFO:root:storage size : 5.8
-INFO:root:Cached: fulllevel - 7
-INFO:root:storage size : 6.2
-INFO:root:Cached: fulllevel - 8
-INFO:root:storage size : 6.59
-INFO:root:Cached: fulllevel - 9
-INFO:root:storage size : 6.98
-INFO:root:Cached: fulllevel - 10
-INFO:root:storage size : 7.37
-INFO:root:Cached: fulllevel - 11
-INFO:root:storage size : 7.76
-INFO:root:Cached: fulllevel - 12
-INFO:root:storage size : 8.55
-INFO:root:Cached: fulllevel - 13
-INFO:root:storage size : 8.94
-INFO:root:Cached: fulllevel - 14
-INFO:root:storage size : 9.33
-INFO:root:Cached: fulllevel - 15
-INFO:root:storage size : 9.72
-INFO:root:Cached: fulllevel - 16
-INFO:root:storage size : 10.12
-INFO:root:Cached: fulllevel - 17
-INFO:root:storage size : 10.51
-INFO:root:Cached: fulllevel - 18
-INFO:root:storage size : 10.9
-INFO:root:Cached: fulllevel - 19
-INFO:root:storage size : 11.29
-INFO:root:Cached: fulllevel - 20
-INFO:root:storage size : 11.68
-INFO:root:Cached: fulllevel - 21
-INFO:root:storage size : 12.08
-INFO:root:Cached: fulllevel - 22
-INFO:root:storage size : 12.47
-INFO:root:Cached: fulllevel - 23
-INFO:root:storage size : 12.86
-INFO:root:Cached: fulllevel - 24
-INFO:root:storage size : 13.25
-INFO:root:Cached: fulllevel - 25
-INFO:root:storage size : 13.64
-INFO:root:Cached: fulllevel - 26
-INFO:root:storage size : 14.04
-INFO:root:Cached: fulllevel - 27
-INFO:root:storage size : 14.43
-INFO:root:Cached: fulllevel - 28
-INFO:root:storage size : 14.82
-INFO:root:Cached: fulllevel - 29
-INFO:root:storage size : 15.21
-INFO:root:Cached: fulllevel - 30
-INFO:root:storage size : 15.93
-INFO:root:Cached: fulllevel - 31
-INFO:root:storage size : 16.62
 INFO:root:Auto storage done: fulllevel
-INFO:root:fullforward
-INFO:root:forward - 1
-INFO:root:ShowIMG_Full
-INFO:root:fullforward
-INFO:root:forward - 2
-INFO:root:ShowIMG_Full
-INFO:root:fullforward
-INFO:root:forward - 3
-INFO:root:ShowIMG_Full
-INFO:root:fullforward
-INFO:root:forward - 4
-INFO:root:ShowIMG_Full
-INFO:root:fullforward
-INFO:root:forward - 5
-INFO:root:ShowIMG_Full
-INFO:root:fullforward
-INFO:root:forward - 6
-INFO:root:ShowIMG_Full
-INFO:root:fullforward
-INFO:root:forward - 7
-INFO:root:ShowIMG_Full
-INFO:root:fullforward
-INFO:root:forward - 8
-INFO:root:ShowIMG_Full
-INFO:root:fullforward
-INFO:root:forward - 9
-INFO:root:ShowIMG_Full
-INFO:root:fullbackward
-INFO:root:backward - 8
-INFO:root:ShowIMG_Full
+INFO:root:storage size : 21.32
+INFO:root:Cached: fulllevel - 0
+INFO:root:event_focusin
+INFO:root:event_focusin
 INFO:root:quit_full
 INFO:root:setting_hide
 INFO:root:enhancer_hide
-INFO:root:start backend_storage: window
 INFO:root:ShowIMG
+INFO:root:start backend_storage: window
+INFO:root:storage size : 21.32
+INFO:root:Cached: window - 0
 INFO:root:Auto storage done: window
-INFO:root:event_focusin
-INFO:root:storage size : 16.62
-INFO:root:Cached: window - 8
 INFO:root:event_focusin
 INFO:root:quit
 INFO:root:setting_create

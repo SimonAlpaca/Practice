@@ -6452,10 +6452,10 @@ class WindowGUI(tk.Frame):
             y = self.pic_canvas.canvasy(event.y)
                 
             if event.delta > 1:                           # scroll up
-                window.zoom_factor = window.zoom_factor + 0.5
+                window.zoom_factor = window.zoom_factor + 0.1
             
             else:                                         # scroll down
-                window.zoom_factor = max(window.zoom_factor - 0.5, 1)
+                window.zoom_factor = max(window.zoom_factor - 0.1, 0.5)
             
             filepath = str(window.folder_entry.get())
             file_ext = os.path.splitext(filepath)[1].lower()
@@ -6717,10 +6717,10 @@ class FullscreenGUI(WindowGUI):
         self.mon_x = monitor_area[0]
         self.mon_y = monitor_area[1]
         
-        fullcon_position_x = int(1190 / settinglevel.dpi_ratio)
-        fullcon_position_y = int(80 / settinglevel.dpi_ratio)
-        photocon_position_x = int(1250 / settinglevel.dpi_ratio)
-        mangacon_position_x = int(975 / settinglevel.dpi_ratio)
+        fullcon_position_x = int(1190 * settinglevel.dpi_ratio)
+        fullcon_position_y = int(80 * settinglevel.dpi_ratio)
+        photocon_position_x = int(1250 * settinglevel.dpi_ratio)
+        mangacon_position_x = int(975 * settinglevel.dpi_ratio)
         self.popup.geometry("%dx%d+%d+%d" %(width, height, self.mon_x, self.mon_y)) 
         self.full_con.geometry("+%d+%d" % (window.full_w / 2 + self.mon_x - fullcon_position_x /2, window.full_h - fullcon_position_y + self.mon_y))
         self.photo_con.geometry("+%d+%d" % (window.full_w / 2 - photocon_position_x / 2 + self.mon_x, window.full_h - fullcon_position_y + self.mon_y))
@@ -6830,11 +6830,11 @@ class FullscreenGUI(WindowGUI):
         
         self.full_con.resizable(False,False)
         self.full_con.overrideredirect(1)
-        
-        fullcon_w = int(1285 / settinglevel.dpi_ratio)
-        fullcon_h = int(65 / settinglevel.dpi_ratio)
-        fullcon_position_x = int(1285 / settinglevel.dpi_ratio)
-        fullcon_position_y = int(80 / settinglevel.dpi_ratio)
+        print(settinglevel.dpi_ratio)
+        fullcon_w = int(1285 * settinglevel.dpi_ratio)
+        fullcon_h = int(60 * settinglevel.dpi_ratio)
+        fullcon_position_x = int(1285 * settinglevel.dpi_ratio)
+        fullcon_position_y = int(60 * settinglevel.dpi_ratio)
         self.full_con.geometry("%sx%s+%d+%d" % (fullcon_w, fullcon_h, window.full_w / 2- fullcon_position_x /2, window.full_h - fullcon_position_y))
         
         self.listbox_button2 = ttk.Button(self.full_con, text = "List", style='primary.TButton', command = listlevel.show_listbox, width=8)
@@ -6874,10 +6874,10 @@ class FullscreenGUI(WindowGUI):
         self.photo_con.resizable(False,False)
         self.photo_con.overrideredirect(1)
         
-        photocon_w = int(1250 / settinglevel.dpi_ratio)
-        photocon_h = int(65 / settinglevel.dpi_ratio)
-        photocon_position_x = int(1250 / settinglevel.dpi_ratio)
-        photocon_position_y = int(80 / settinglevel.dpi_ratio)
+        photocon_w = int(1250 * settinglevel.dpi_ratio)
+        photocon_h = int(65 * settinglevel.dpi_ratio)
+        photocon_position_x = int(1250 * settinglevel.dpi_ratio)
+        photocon_position_y = int(80 * settinglevel.dpi_ratio)
         self.photo_con.geometry("%sx%s+%d+%d" % (photocon_w, photocon_h, window.full_w / 2 - photocon_position_x/2, window.full_h - photocon_position_y))
         self.forward_speed = 1
         
@@ -6935,10 +6935,10 @@ class FullscreenGUI(WindowGUI):
         
         self.photo_preview_auto_adjust = True
         
-        self.photo_canva_w = int(250 / settinglevel.dpi_ratio)
-        self.photo_canva_h = int(250 / settinglevel.dpi_ratio)
-        photocon_position_x = int(65 / settinglevel.dpi_ratio)
-        photocon_position_y = int(315 / settinglevel.dpi_ratio)
+        self.photo_canva_w = int(250 * settinglevel.dpi_ratio)
+        self.photo_canva_h = int(250 * settinglevel.dpi_ratio)
+        photocon_position_x = int(65 * settinglevel.dpi_ratio)
+        photocon_position_y = int(315 * settinglevel.dpi_ratio)
         self.photo_preview.resizable(False,False)
         self.photo_preview.overrideredirect(1)
         self.photo_preview.geometry('%dx%d' %(self.photo_canva_w, self.photo_canva_h))   
@@ -6961,10 +6961,10 @@ class FullscreenGUI(WindowGUI):
         self.manga_con.resizable(False,False)
         self.manga_con.overrideredirect(1)
         
-        photocon_w = int(1100 / settinglevel.dpi_ratio)
-        photocon_h = int(65 / settinglevel.dpi_ratio)
-        photocon_position_x = int(1100 / settinglevel.dpi_ratio)
-        photocon_position_y = int(80 / settinglevel.dpi_ratio)
+        photocon_w = int(1100 * settinglevel.dpi_ratio)
+        photocon_h = int(65 * settinglevel.dpi_ratio)
+        photocon_position_x = int(1100 * settinglevel.dpi_ratio)
+        photocon_position_y = int(80 * settinglevel.dpi_ratio)
         self.manga_con.geometry("%sx%s+%d+%d" % (photocon_w, photocon_h, window.full_w / 2- photocon_position_x /2, window.full_h - photocon_position_y))
         
         self.listbox_button4 = ttk.Button(self.manga_con, text = "List", style='primary.TButton', command = listlevel.show_listbox, width=8)
@@ -7035,8 +7035,8 @@ class FullscreenGUI(WindowGUI):
         x0 = self.photo_preview.winfo_rootx()
         y0 = self.photo_preview.winfo_rooty()
         
-        fulllevel.photo_canva_w = max(int(125 / settinglevel.dpi_ratio), x1-x0)
-        fulllevel.photo_canva_h = max(int(125 / settinglevel.dpi_ratio), y1-y0)
+        fulllevel.photo_canva_w = max(int(125 * settinglevel.dpi_ratio), x1-x0)
+        fulllevel.photo_canva_h = max(int(125 * settinglevel.dpi_ratio), y1-y0)
         
         self.photo_preview.geometry("%sx%s" %(fulllevel.photo_canva_w, fulllevel.photo_canva_h)) # for resizing the window
         self.photo_canvas.configure(width = fulllevel.photo_canva_w, height = fulllevel.photo_canva_h)
@@ -7178,10 +7178,10 @@ class FullscreenGUI(WindowGUI):
         
         # reset photo preview
         self.photo_preview_auto_adjust = True
-        self.photo_canva_w = int(250 / settinglevel.dpi_ratio)
-        self.photo_canva_h = int(250 / settinglevel.dpi_ratio)
-        photo_canva_position_x = int(65 / settinglevel.dpi_ratio)
-        photo_canva_position_y = int(300 / settinglevel.dpi_ratio)
+        self.photo_canva_w = int(250 * settinglevel.dpi_ratio)
+        self.photo_canva_h = int(250 * settinglevel.dpi_ratio)
+        photo_canva_position_x = int(65 * settinglevel.dpi_ratio)
+        photo_canva_position_y = int(300 * settinglevel.dpi_ratio)
         self.photo_preview.geometry('%dx%d' %(self.photo_canva_w, self.photo_canva_h))  
         self.photo_preview.geometry("+%d+%d" % (photo_canva_position_x + self.mon_x, window.full_h - photo_canva_position_y + self.mon_y))
         
