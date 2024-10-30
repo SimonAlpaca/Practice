@@ -3109,7 +3109,7 @@ class WindowGUI(tk.Frame):
         logging.info("write_print")
         
         to_dir = r"C:\Users\simon\Practice"
-        output_path = os.path.join(to_dir,"exhentai.txt")
+        output_path = os.path.join(to_dir,"html_text.txt")
         output_file = open(output_path, "w", encoding ="utf-8")   # create txt
         output_file.flush()
     
@@ -3501,11 +3501,17 @@ class WindowGUI(tk.Frame):
                 next_chapter_path = None
             
             else:
-                page_name = os.path.split(front_path)[1]
-                page_name_nohtml = os.path.splitext(page_name)[0]
-                page_no = page_name_nohtml[2:]
-                next_page_no = str(int(page_no) + 1)
-                next_chapter_path = os.path.split(front_path)[0] + "/0_" + next_page_no + ".html"
+                next_chapter = bs.find(id="next-chapter")
+                if next_chapter:
+                    href = next_chapter.get('href')
+                    # print(href)
+                    next_chapter_path = href
+                    
+                # page_name = os.path.split(front_path)[1]
+                # page_name_nohtml = os.path.splitext(page_name)[0]
+                # page_no = page_name_nohtml[2:]
+                # next_page_no = str(int(page_no) + 1)
+                # next_chapter_path = os.path.split(front_path)[0] + "/0_" + next_page_no + ".html"
             
             # print(next_chapter_path)
             
@@ -6852,7 +6858,8 @@ class FullscreenGUI(WindowGUI):
         
         self.full_con.resizable(False,False)
         self.full_con.overrideredirect(1)
-        print(settinglevel.dpi_ratio)
+        
+        # print("DPI ratio: %s" %settinglevel.dpi_ratio)
         fullcon_w = int(1285 * settinglevel.dpi_ratio)
         fullcon_h = int(60 * settinglevel.dpi_ratio)
         fullcon_position_x = int(1285 * settinglevel.dpi_ratio)
