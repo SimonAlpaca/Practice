@@ -3108,7 +3108,7 @@ class WindowGUI(tk.Frame):
         print("write_print")
         logging.info("write_print")
         
-        to_dir = r"C:\Users\simon\Practice"
+        to_dir = os.path.split(sys.argv[0])[0]
         output_path = os.path.join(to_dir,"html_text.txt")
         output_file = open(output_path, "w", encoding ="utf-8")   # create txt
         output_file.flush()

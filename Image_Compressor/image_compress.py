@@ -3,9 +3,9 @@
 from PIL import Image
 import os 
 
-dir = r"C:\Users\simon\Practice\Image_Compressor\input"
+dir = r"C:\Practice\Image_Compressor\input"
 
-output_dir = r"C:\Users\simon\Practice\Image_Compressor\output"
+output_dir = r"C:\Practice\Image_Compressor\output"
 list_dir = os.listdir(dir)
 
 for file in list_dir:
